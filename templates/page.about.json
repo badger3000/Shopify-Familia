@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "bgcolor": "#f8f8f8",
+        "textcolor": "#181818"
+      }
+    },
+    "1663676812f47aa174": {
+      "type": "image-with-text",
+      "blocks": {
+        "1663676811e7df8228-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1663676811e7df8228-1": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shipping",
+            "heading": "Icon with text",
+            "content": "<p>To provide clients insight into your brand, pair words with any image to introduce a new campaign.<\/p>"
+          }
+        },
+        "1663676811e7df8228-2": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shipping",
+            "heading": "Icon with text",
+            "content": "<p>To provide clients insight into your brand, pair words with any image to introduce a new campaign.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1663676811e7df8228-0",
+        "1663676811e7df8228-1",
+        "1663676811e7df8228-2"
+      ],
+      "settings": {
+        "image_shadow": true,
+        "image_alignment": "left",
+        "bgcolor": "primary",
+        "image_shadow_color": "#dddddd",
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 30,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    },
+    "166367682029673b95": {
+      "type": "video-section",
+      "settings": {
+        "videofile": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "fullwidth": false,
+        "autoplay": false,
+        "bg_pattern": "none",
+        "title": "Video Banner Heading Here",
+        "subtitle": "Video Banner Sub Heading Here",
+        "overlay_content": true,
+        "title_color": "#ffffff",
+        "subtitle_color": "#ffffff",
+        "btn_color": "#ffffff",
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 50
+      }
+    },
+    "166367683875045f94": {
+      "type": "multi-image-with-text",
+      "blocks": {
+        "1663676838e644614f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Multi image with text"
+          }
+        },
+        "1663676838e644614f-1": {
+          "type": "image",
+          "settings": {
+            "first_image_focal": "center",
+            "second_image_focal": "center",
+            "image_shadow": true,
+            "bgcolor": "secondary",
+            "image_shadow_color": "#dddddd"
+          }
+        },
+        "1663676838e644614f-2": {
+          "type": "text",
+          "settings": {
+            "content": "<p>To provide clients insight into your brand, pair words with any image. Here you can tell a narrative, explain a product feature, or introduce a new campaign.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1663676838e644614f-0",
+        "1663676838e644614f-1",
+        "1663676838e644614f-2"
+      ],
+      "settings": {
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 30,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1663676812f47aa174",
+    "166367682029673b95",
+    "166367683875045f94"
+  ]
+}

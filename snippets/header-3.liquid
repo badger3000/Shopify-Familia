@@ -1,0 +1,33 @@
+<div class="top-header header_3">
+  <div class="{% if settings.layout_width == 'boxed' %}container{% else %}container-fluid{% endif %}">
+    <div class="navbar navbar-expand-md">
+      {%- if section.settings.menu != blank or section.blocks.size > 0 -%}
+      <div class="hamburger-content">
+      	<div class="nav__btn">
+        <a href="#sidemenu" class="hamburger" role="button" aria-expanded="false"  aria-label="Toggle navigation">
+          <span class="hamburger-line hamburger-line-1"></span>
+          <span class="hamburger-line hamburger-line-2"></span>
+          <span class="hamburger-line hamburger-line-3"></span>
+        </a>
+      </div>
+      	{% render 'hamburger-menu' section : section %}
+      </div>
+      {%- endif -%}
+      <a class="header__heading-link {% if section.settings.logo == blank %}yv-heading-shop-link{% endif %}" href="{{ routes.root_url }}" aria-label="{{ shop.name }}">
+        {%- render 'header-logo' section : section -%}
+      </a>
+      <div class="form-inline">
+        {% render 'header-icons' section : section %}
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .header_3{
+    --hamburgerBackground:{{ section.settings.hamburger_bgcolor }};
+    --hamburgerBackground2:{{ section.settings.hamburger_bgcolor | color_lighten: 10 }};
+    --hamburgerBackground3: {{ section.settings.hamburger_bgcolor | color_lighten: 15 }};
+    --hamburgerText:{{ section.settings.hamburger_textcolor }};
+    --hamburgerTextHover:{{ section.settings.hamburger_textcolor_hover }};
+  }
+</style>

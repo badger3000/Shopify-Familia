@@ -1,0 +1,106 @@
+{% unless section.settings.full_width %}
+<div class="container sm-container">
+  {% endunless %}
+    <div class="map_box" id="mapContainer-{{ section.id }}" data-location="{{ section.settings.mapaddress }}" data-map-style="{{ section.settings.map_style }}" data-map-container style="height:500px">
+      <div class="map_box_placeholder">
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      </div>
+    </div>  
+  {% unless section.settings.full_width %}
+</div>
+{% endunless %}
+<style>
+  #shopify-section-{{section.id}}.shopify-section {
+    background:var(--{{- section.settings.bgcolor -}}ColorBody);
+  }
+</style>
+{% schema %}
+{
+  "name": "t:sections.map.name",
+  "settings": [
+    {
+      "id": "full_width",
+      "type": "checkbox",
+      "label": "t:sections.map.settings.full_width.label",
+      "default": true
+    },
+    {
+      "id": "mapaddress",
+      "type": "text",
+      "label": "t:sections.map.settings.mapaddress.label"
+    },
+    { 
+      "type": "select",
+      "id": "map_style",
+      "label": "t:sections.map.settings.map_style.label",
+      "default": "roadmap",
+      "options": [
+        {
+          "label": "t:sections.map.settings.map_style.options.roadmap.label",
+          "value": "roadmap"
+        },
+        {
+          "label": "t:sections.map.settings.map_style.options.satellite.label",
+          "value": "satellite"
+        },
+        {
+          "label": "t:sections.map.settings.map_style.options.hybrid.label",
+          "value": "hybrid"
+        },
+        {
+          "label": "t:sections.map.settings.map_style.options.terrain.label",
+          "value": "terrain"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.map.settings.paragraph.content"
+    },
+    {
+        "type": "header",
+        "content": "t:common.header.color_singular_section.label"
+    },  
+    {
+        "type": "select",
+        "id": "bgcolor",
+        "label": "t:common.header.background_section.label",
+        "info": "t:sections.map.settings.bgcolor.info",
+        "default": "primary",
+        "options":[
+        {
+            "value":"primary",
+            "label": "t:common.header.primary.label"
+        },
+        { 
+            "value":"secondary",
+            "label": "t:common.header.secondary.label"
+        },
+        {
+            "value":"tertiary",
+            "label": "t:common.header.tertiary.label"
+        },
+        {
+            "value":"quaternary",
+            "label": "t:common.header.quaternary.label"
+        },
+        {
+            "value":"gradient",
+            "label": "t:common.header.gradient.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.map.presets.name"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

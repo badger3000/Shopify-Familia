@@ -1,0 +1,46 @@
+<div class="yv-page-banner"  style="{% if section.settings.banner != blank %}background:url({{ section.settings.banner | image_url }}) no-repeat center/cover;{% elsif section.settings.bgcolor != blank %}background-color:{{section.settings.bgcolor}};{% endif %}">
+  <div class="page-banner-content">
+    <h2 class="page-banner-title" style="color:{{ section.settings.textcolor }}">{{ page.title }}</h2>
+  </div>
+</div>
+{%- if page.content != blank -%}
+<div class="yv-page-description-wrapper">
+  <div class="{% if settings.layout_width == 'boxed' %}container{% else %}container-fluid{% endif %}">
+    <div class="page-description">
+      {{ page.content | replace: '<table', '<div class="table-responsive"><table' | replace: '</table>', '</table></div>' }}
+    </div>
+  </div>
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "banner-top-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner",
+      "label": "t:sections.main-page.settings.banner.label",
+      "info": "t:sections.main-page.settings.banner.info"
+    },
+    {
+        "type": "header",
+        "content": "t:common.header.color_section.label"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "default": "#f5efec",
+      "label": "t:sections.main-page.settings.bgcolor.label"
+    },
+    {
+      "type": "color",
+      "id": "textcolor",
+      "default": "#181818",
+      "label": "t:sections.main-page.settings.textcolor.label"
+    }
+  ]
+}
+{% endschema %}

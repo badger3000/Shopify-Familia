@@ -1,0 +1,367 @@
+<div class="{%if section.settings.slider_full_width %}featured-collection-fullwidth{% else %}{% if settings.layout_width == 'boxed' %}container{% else %}container-fluid{% endif %}{% endif %} yv-new-arrival-wrapper"  style="--layoutRadius:{% if settings.layout_style == 'rounded' %}20px{% else %}0px{% endif %}">
+  <div class="row no-gutters align-items-center">
+    <div class="col-12 {%if section.settings.slider_full_width %}col-sm-12 col-md-12 col-lg-12{% else %}col-sm-6 col-md-6 col-lg-5{% endif %}">
+      {%- liquid 
+          assign visibleItems = 4
+          if section.settings.slider_full_width
+            assign visibleItems = 5
+          endif
+      		assign collection = section.settings.collection
+          	assign collectionImage = collection.featured_image
+        	if section.settings.collection_image != blank
+      		assign collectionImage = section.settings.collection_image
+      		endif 
+          if settings.product_image_style == 'landscape'
+            assign productImageRatio = 75
+          elsif settings.product_image_style == 'square'
+            assign productImageRatio = 100
+          elsif settings.product_image_style == 'portrait'
+            assign productImageRatio = 125
+          endif
+      -%}
+      <div class="yv-new-arriavl-imgbox" >
+        <div class="small-trigger-element">
+          {%- if collectionImage -%}
+          {%- render 'lazy-image' image: collectionImage, width: '700x' -%}
+          {%- else -%}
+              {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+          <div class="yv-new-arriavl-content"> 
+              
+              <h4 class="featured-collection-title {%if section.settings.slider_full_width %}h2{% else %}h4{% endif %}" {% if settings.enable_animation %}data-aos="fade-up"{% endif %}>
+                {%- liquid 
+                  if section.settings.collection_heading != blank
+                    echo section.settings.collection_heading
+                  elsif collection != blank
+                    echo collection.title
+                  endif 
+                -%}
+              </h4>
+              <p class="text-large featured-collection-desc" {% if settings.enable_animation %}data-aos="fade-up" data-aos-delay="100"{% endif %}>
+                {%- liquid 
+                  if section.settings.collection_desc != blank
+                    echo section.settings.collection_desc
+                  elsif collection != blank
+                    echo collection.description | strip_html | truncatewords: 20
+                  endif 
+                -%}
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 {% if section.settings.slider_full_width %}col-sm-12 col-md-12 col-lg-12{% else %}col-sm-6 col-md-6 col-lg-7{% endif %}">
+      {% if section.settings.slider_full_width %}
+      <div class="{% if settings.layout_width == 'boxed' %}container{% else %}container-fluid{% endif %}">
+      {% endif %} 
+      <div class="yv-new-arrival-sliderbox {% if section.settings.slider_full_width and collection.products_count < 4 %}adapt-slider-width count-{{ collection.products_count }} {% endif %}">
+        {% if section.settings.heading != blank or section.settings.subheading != blank %}
+        <div class="yv-new-arrival-slider-header">
+          <h6 class="heading-subtitle">{{ section.settings.subheading }}</h6>
+          <h2 class="heading-title {% if section.settings.slider_full_width %}h4{% else %}h2{% endif %}">
+            {{ section.settings.heading }}
+          </h2>
+        </div>
+        {% endif %}
+        {%- liquid
+        		assign enableSlider = false
+        		if collection != blank and collection.products.size > visibleItems
+        		assign enableSlider = true
+        		elsif collection == blank
+        		assign enableSlider = true 
+        		endif 
+        -%}
+        <div class="yv-new-arriavl-slider {% unless section.settings.slider_full_width %}content-overlay-{{ section.settings.over_image_product }}{% endunless %}" {% if enableSlider and section.settings.products_count > visibleItems %}
+             data-flickity-slider='{"wrapAround":true,
+                                   "cellAlign": "left",
+                                   "dragThreshold":true,
+                                   "contain": true,
+                                   "resize": true,
+                                   "prevNextButtons": true,
+                                   "touchVerticalScroll": false,
+                                   "pageDots": false,
+                                   "arrowShape":"M36.7,76.9c1.9,1.4,1.9,3.8,0,5.7c-0.6,0.6-1.6,0.9-2.8,0.9c-0.9,0-1.9-0.3-2.8-0.9L2.2,52.8 c-1.9-1.4-1.9-4.3,0-5.7L30,18.3c1.4-1.4,3.8-1.4,5.2,0c1.9,1.4,1.9,4.3,0,5.7L10.2,50L36.7,76.9z M95.2,46.2c1.9,0,3.8,1.9,3.8,4.3 c0,2.4-1.9,3.8-3.8,3.8H13c-2.4,0-3.8-1.4-3.8-3.8c0-2.4,1.4-4.3,3.8-4.3H95.2z"}'{% endif %}
+              tabindex="0" data-desktop-only>
+          {%- if collection.products.size > 0 -%}
+          {% liquid 
+          for product in collection.products limit: section.settings.products_count
+          assign productFormId = 'product-form-' | append : section.id | append : forloop.index | append : '-' | append : collection.handle
+          assign mainClass='xsmall-product-card'
+          assign delay = 50 | times : forloop.index
+          if settings.enable_animation
+            assign animationAttr = 'data-aos="fade-up" data-aos-delay="' | append : delay | append : '"'  
+          else
+            assign animationAttr = ''
+          endif
+          render 'product-grid' product: product, productFormId : productFormId, productClasses: mainClass , animationAttr: animationAttr, imageSize : '255x'
+          endfor -%}
+          {% else %}
+
+          {%- for i in (1..section.settings.products_count) -%}
+          <div class="yv-product-card xsmall-product-card{% if settings.layout_style == 'rounded' %} product-grid-layout-rounded{% endif %}">
+            <div class="animated-grid" {% if settings.enable_animation %}data-aos="fade-up" data-aos-delay="{{ 50 | times : forloop.index }}"{% endif %}>
+              <div class="yv-product-card-img">              
+                {%- if settings.product_image_style != 'aspect' -%}
+                <div class="image-wrapper no-product-image" style="padding-bottom:{{- productImageRatio -}}%">
+                {%- endif -%}
+                {%- capture current -%}{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
+                {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- if settings.product_image_style != 'aspect' -%}
+                </div>
+                {%- endif -%}
+              </div>
+              <div class="yv-product-information {{ settings.product_grid_content_alignment }}">
+                <div class="yv-product-information__wrapper">
+                  <span class="yv-product-title">{{ 'onboarding.product_title' | t | capitalize }}</span>
+                  <div class="yv-prizebox">
+                    <span class="yv-product-price">{{ 1999 | money }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {%- endfor -%}
+          {% endif %}
+        </div>
+      </div>
+      {%if section.settings.slider_full_width %}
+    </div>
+      {% endif %} 
+    </div>
+  </div>
+</div>
+<style>
+  #shopify-section-{{ section.id }}.shopify-section {
+    --imageFocal:{{ section.settings.image_focal}};
+    background:var(--{{- section.settings.bgcolor -}}ColorBody);
+    padding-top:{{ section.settings.top_space_desktop }}px;
+    padding-bottom:{{ section.settings.bottom_space_desktop }}px;
+  }
+  #shopify-section-{{ section.id }}.shopify-section .yv-new-arrival-sliderbox ,
+  #shopify-section-{{ section.id }}.shopify-section .yv-new-arriavl-slider{
+    background:var(--{{- section.settings.bgcolor -}}ColorBody);
+    {%- unless section.settings.bgcolor == 'primary' or section.settings.bgcolor == 'gradient' -%}
+    --colorTextBody:var(--{{- section.settings.bgcolor -}}colorTextBody);
+    --heading_color:var(--{{- section.settings.bgcolor -}}_heading_color);
+    --primaryColorBody:var(--{{- section.settings.bgcolor -}}ColorBody);
+    {%- endunless -%}
+  }
+  #shopify-section-{{ section.id }}.shopify-section .featured-collection-title{
+    color:{{ section.settings.collection_title_color}};
+  }
+  
+  #shopify-section-{{ section.id }}.shopify-section .featured-collection-desc{
+    color:{{ section.settings.collection_desc_color}};
+  }
+  @media only screen and (max-width:575px) {
+    #shopify-section-{{ section.id }}.shopify-section{
+      padding-top:{{ section.settings.top_space_mobile }}px;
+      padding-bottom:{{ section.settings.bottom_space_mobile }}px;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "t:sections.featured-collection.name",
+  "tag": "section",
+  "class": "new-arrival-section",
+  "settings": [
+   {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
+    },
+    {
+      "type": "range",
+      "id": "products_count",
+      "min": 4,
+      "max": 15,
+      "step": 1,
+      "label": "t:sections.featured-collection.settings.products_count.label",
+      "default": 6
+    },
+    {
+      "type": "checkbox",
+      "id": "slider_full_width",
+      "label": "t:sections.featured-collection.settings.slider_full_width.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "over_image_product",
+      "label": "t:sections.featured-collection.settings.over_image_product.label",
+      "info": "t:sections.featured-collection.settings.over_image_product.info",
+      "default": false
+    },
+    {
+        "type": "header",
+        "content": "t:common.header.text_section.label"
+    }, 
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "All Products",
+      "label": "t:sections.featured-collection.settings.heading.label"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Add Featured Collection here",
+      "label": "t:sections.featured-collection.settings.subheading.label"
+    },
+    {
+        "type": "header",
+        "content": "t:common.header.custom_section.label"
+    }, 
+    {
+      "type": "image_picker",
+      "id": "collection_image",
+      "label": "t:sections.featured-collection.settings.collection_image.label",
+      "info": "t:sections.featured-collection.settings.collection_image.info"
+    }, 
+    {
+      "type": "select",
+      "id": "image_focal",
+      "label": "t:common.image_focal.heading.common.label",
+      "default":"center",
+      "options":[
+        {
+          "value":"top left",
+          "label":"t:common.image_focal.options.top-left.label"
+        },  
+        {
+          "value":"top center",
+          "label":"t:common.image_focal.options.top-center.label"
+        },
+        {
+          "value":"top right",
+          "label":"t:common.image_focal.options.top-right.label"
+        },
+        {
+          "value":"center left",
+          "label":"t:common.image_focal.options.center-left.label"
+        },
+        {
+          "value":"center",
+          "label":"t:common.image_focal.options.center.label"
+        },  
+        {
+          "value":"center right",
+          "label":"t:common.image_focal.options.center-right.label"
+        },
+        {
+          "value":"bottom left",
+          "label":"t:common.image_focal.options.bottom-left.label"
+        },
+        {
+          "value":"bottom center",
+          "label":"t:common.image_focal.options.bottom-center.label"
+        },
+        {
+          "value":"bottom right",
+          "label":"t:common.image_focal.options.bottom-right.label"
+        }       
+      ]
+    },
+    {
+      "type": "text",
+      "id": "collection_heading",
+      "label": "t:sections.featured-collection.settings.collection_heading.label"
+    },
+    {
+      "type": "textarea",
+      "id": "collection_desc",
+      "label": "t:sections.featured-collection.settings.collection_desc.label"
+    },
+    {
+        "type": "header",
+        "content": "t:common.header.color_section.label"
+    },  
+    {
+        "type": "select",
+        "id": "bgcolor",
+        "label": "t:common.header.background_section.label",
+        "default": "primary",
+        "options":[
+        {
+            "value":"primary",
+            "label": "t:common.header.primary.label"
+        },
+        {
+            "value":"secondary",
+            "label": "t:common.header.secondary.label"
+        },
+        {
+            "value":"tertiary",
+            "label": "t:common.header.tertiary.label"
+        },
+        {
+            "value":"quaternary",
+            "label": "t:common.header.quaternary.label"
+        },
+        {
+            "value":"gradient",
+            "label": "t:common.header.gradient.label"
+        }
+        ]
+    },
+    {
+        "type":"color",
+        "label":"t:sections.featured-collection.settings.collection_heading.label",
+        "id":"collection_title_color",
+        "default":"#000000"
+    },
+    {
+        "type":"color",
+        "label":"t:sections.featured-collection.settings.collection_desc.label",
+        "id":"collection_desc_color",
+        "default":"#000000"
+    },
+    {
+        "type": "header",
+        "content": "t:common.header.space_section.label"
+    }, 
+    {
+      "type": "range",
+      "id": "top_space_desktop",
+      "label": "t:common.top_space_desktop.label",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "bottom_space_desktop",
+      "label": "t:common.bottom_space_desktop.label",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "top_space_mobile",
+      "label": "t:common.top_space_mobile.label",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "bottom_space_mobile",
+      "label": "t:common.bottom_space_mobile.label",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.featured-collection.presets.name"
+    }
+  ]
+}
+{% endschema %}

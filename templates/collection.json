@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "16613270481d29ff89": {
+      "type": "promotion-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "border_radius": 5,
+        "heading": "Unbelievable Deals",
+        "text": "Winter Sales Upto 50%",
+        "label": "Shop now",
+        "link": "shopify:\/\/collections",
+        "textcolor": "#000000",
+        "bgcolor": "#f8f8f8",
+        "btntextcolor": "#ffffff",
+        "btnbgcolor": "#181818",
+        "btnborder": "#000000",
+        "top_space_desktop": 10,
+        "bottom_space_desktop": 10,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "settings": {
+        "collection_title": false,
+        "collection_description": false,
+        "collection_image": false,
+        "pagination_type": "infinite",
+        "products_per_page": 16,
+        "enable_filtering": true,
+        "filters_layout": "sidebar",
+        "enable_sorting": true,
+        "enable_display_options": true,
+        "bgcolor": "#f8f8f8",
+        "textcolor": "#000000"
+      }
+    }
+  },
+  "order": [
+    "16613270481d29ff89",
+    "main-collection"
+  ]
+}

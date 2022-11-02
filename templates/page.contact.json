@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "settings": {
+        "bgcolor": "#f8f8f8",
+        "textcolor": "#181818"
+      }
+    },
+    "main": {
+      "type": "contact-page-template",
+      "settings": {
+        "contact_heading": "Support",
+        "phone_heading": "Phone",
+        "phone_number": "+1234567890",
+        "email_heading": "email",
+        "email": "info@email.com",
+        "address_heading": "Address",
+        "address": "#123 abc main city",
+        "form_heading": "Get In Touch",
+        "form_button": "SEND MESSAGE"
+      }
+    },
+    "16553647653bec1f07": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "mapaddress": "",
+        "map_style": "roadmap",
+        "bgcolor": "primary"
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "main",
+    "16553647653bec1f07"
+  ]
+}

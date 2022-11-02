@@ -1,0 +1,43 @@
+{% form 'localization', id: 'localization_form' %}
+<div class="footer-dropdown">
+{%- if section.settings.enable_language_selector -%}
+<div class="disclosure btn-group dropup">
+  <div class="dropdown-menu">
+    <select class="lang-dropdown disclosure__list" id="LanguageList" name="language_code" aria-label="{{ 'localization.language_label' | t }}">
+      {% for language in localization.available_languages %}
+      <option class="disclosure__item" value="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %}selected{% endif %}>
+        {{ language.endonym_name | capitalize }}
+      </option>
+      {% endfor %}
+    </select>
+  </div>
+</div>
+{%- endif -%}
+{%- if section.settings.enable_currency_selector -%}
+<div class="disclosure btn-group dropup">
+  <div class="dropdown-menu">
+    <select class="lang-dropdown disclosure__list" id="CountryList" name="country_code" aria-label="{{ 'localization.country_label' | t }}">
+      {% for country in localization.available_countries %}
+      <option value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}selected{% endif %}>{{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})</option>
+      {% endfor %}
+    </select>
+  </div>
+</div>
+{%- endif -%}
+  <noscript class="text-center">
+<button type="submit" class="button small-btn secondary-button">{{ 'localization.update' | t }}
+</button>
+  </noscript>
+</div>
+{% endform %}
+<script>
+  var localizationDropdown =  document.getElementsByClassName('lang-dropdown');
+  if(localizationDropdown){
+    Array.from(localizationDropdown).forEach(function(list) {
+      list.addEventListener('change', ()=>{	
+                            var form = list.closest('form');
+      form.submit();  
+    })      
+  })
+  }
+</script>

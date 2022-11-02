@@ -1,0 +1,157 @@
+{
+  "sections": {
+    "166332075282c51e29": {
+      "type": "rotating-text",
+      "disabled": true,
+      "settings": {
+        "text1": "<p>Add promotional text here<\/p><p>Add promotional text here<\/p><p>Add promotional text here<\/p>",
+        "text2": "",
+        "row1_font_family": "--font-family",
+        "row2_font_family": "--font-family",
+        "heading_font_size": 18,
+        "subheading_font_size": 10,
+        "section_border": true,
+        "bgcolor": "#ffffff",
+        "text1color": "#000000",
+        "text2color": "#a56748",
+        "top_space_desktop": 0,
+        "bottom_space_desktop": 0,
+        "top_space_mobile": 15,
+        "bottom_space_mobile": 15
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "fe3c09d6-15d2-4555-a0f5-c87ab0cf370f": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "c069e4ad-5908-400d-a0ad-e071aa04cf33": {
+          "type": "review-star",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "e472a04a-7df5-4817-a05b-bd2ec7b1d971": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Black solid sweatshirt, has a hood, 2 pockets, long sleeves, zip closure, straight hem . The model (height 5'8\") is wearing a size S."
+          }
+        },
+        "5540566c-63cd-4a90-b9b6-7707e45d7066": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "9db1533f-9baf-4eb6-869d-dd2b494b6990": {
+          "type": "sku",
+          "settings": {
+          }
+        },
+        "8658b9a0-c9c5-4055-a2e1-56a8f49d0b68": {
+          "type": "variant",
+          "settings": {
+            "size_chart": ""
+          }
+        },
+        "811e6d87-a5e5-4457-9124-d3c2ed070ba9": {
+          "type": "quantity",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "16819786-9d1e-449d-966d-08d21e1c91af": {
+          "type": "button",
+          "settings": {
+            "dynamic_checkout_btn": true,
+            "show_subscriptions_plan": true,
+            "sticky_add_to_cart": true,
+            "sticky_add_to_cart_position": "bottom"
+          }
+        },
+        "e02bd487-7756-43fc-8ac6-54fa9a16ca85": {
+          "type": "social-icons",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "fe3c09d6-15d2-4555-a0f5-c87ab0cf370f",
+        "c069e4ad-5908-400d-a0ad-e071aa04cf33",
+        "e472a04a-7df5-4817-a05b-bd2ec7b1d971",
+        "5540566c-63cd-4a90-b9b6-7707e45d7066",
+        "9db1533f-9baf-4eb6-869d-dd2b494b6990",
+        "8658b9a0-c9c5-4055-a2e1-56a8f49d0b68",
+        "811e6d87-a5e5-4457-9124-d3c2ed070ba9",
+        "16819786-9d1e-449d-966d-08d21e1c91af",
+        "e02bd487-7756-43fc-8ac6-54fa9a16ca85"
+      ],
+      "settings": {
+        "gallery_style": "gallery",
+        "show_description": true,
+        "width": "half",
+        "style": "accordion",
+        "accordion_content_alignment": "left",
+        "content_heading": "Heading",
+        "content": "Add Second tab description here."
+      }
+    },
+    "1661406604438d91b8": {
+      "type": "multi-image-with-text",
+      "disabled": true,
+      "blocks": {
+        "29a5da7f-22a6-4421-979c-73a83e7d7a6d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Multi image with text"
+          }
+        },
+        "5a6c12e2-77fa-46e1-994f-7fc889889bcd": {
+          "type": "image",
+          "settings": {
+            "first_image_focal": "center",
+            "second_image_focal": "center",
+            "image_shadow": true,
+            "bgcolor": "secondary",
+            "image_shadow_color": "#dddddd"
+          }
+        },
+        "87b7ee26-12c4-468f-b566-981d14f7f680": {
+          "type": "text",
+          "settings": {
+            "content": "<p>Add description here.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "29a5da7f-22a6-4421-979c-73a83e7d7a6d",
+        "5a6c12e2-77fa-46e1-994f-7fc889889bcd",
+        "87b7ee26-12c4-468f-b566-981d14f7f680"
+      ],
+      "settings": {
+        "top_space_desktop": 80,
+        "bottom_space_desktop": 80,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    },
+    "product_recommendations": {
+      "type": "product_recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "Recommended Products",
+        "products_count": 8
+      }
+    }
+  },
+  "order": [
+    "166332075282c51e29",
+    "main-product",
+    "1661406604438d91b8",
+    "product_recommendations"
+  ]
+}

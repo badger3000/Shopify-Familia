@@ -1,0 +1,79 @@
+{
+  "sections": {
+    "page-header": {
+      "type": "main-page",
+      "settings": {
+        "bgcolor": "#f8f8f8",
+        "textcolor": "#181818"
+      }
+    },
+    "1658318505f1feb568": {
+      "type": "faq-section",
+      "blocks": {
+        "1658318505cfc17b4b-0": {
+          "type": "faq",
+          "settings": {
+            "heading": "Can you exchange items?",
+            "answer": "<p>Unfortunately, we cannot offer exchanges. If you need a different size or color of an item, you will need to place a new order and return the item that does not fit.<\/p><p><\/p><p>If you order the same model again in a different color or size, we can ensure that you can keep any discount that may have been granted on the original order.<\/p><p><\/p><p>The returned item will be refunded as soon as it arrives at our warehouse.<\/p>"
+          }
+        },
+        "1658318505cfc17b4b-1": {
+          "type": "faq",
+          "settings": {
+            "heading": "What is your return policy?",
+            "answer": "<p>You can return your product up to 14 days after receiving your order. Please make sure that the products are not worn, washed or damaged.<br\/><br\/>Refunds are processed the same way as purchases. For foreign customers, returns are the customer's expense. <strong>In US, returns are free for customers.<\/strong><\/p>"
+          }
+        },
+        "1658318505cfc17b4b-2": {
+          "type": "faq",
+          "settings": {
+            "heading": "When will my card be charged for my order?",
+            "answer": "<p>The debit on your credit card comes within a maximum of 7 days after your order. All bank transactions are protected and managed by the stripe company.<\/p>"
+          }
+        },
+        "ddea5765-5d65-464e-92c4-c6edf77797a9": {
+          "type": "faq",
+          "settings": {
+            "heading": "Do you provide International delivery?",
+            "answer": "<p>This top-notch T-shirt from Roadster will have you looking fresh all year long. This white piece is incredibly versatile and can be matched with dark or light denim for an evening.<\/p><p>100% Original Products<\/p><p>Pay on delivery might be available<\/p><p>Easy 30 days returns and exchanges<\/p><p>Try & Buy might be available<\/p>"
+          }
+        },
+        "9465e2d1-8bb8-4824-a28e-50ba0078a928": {
+          "type": "faq",
+          "settings": {
+            "heading": "What are your delivery options?",
+            "answer": "<p>This top-notch T-shirt from Roadster will have you looking fresh all year long. This white piece is incredibly versatile and can be matched with dark or light denim for an evening.<\/p><p>100% Original Products<\/p><p>Pay on delivery might be available<\/p><p>Easy 30 days returns and exchanges<\/p><p>Try & Buy might be available<\/p>"
+          }
+        },
+        "a37996ee-a32a-4f69-9703-ab7bbe2a8845": {
+          "type": "faq",
+          "settings": {
+            "heading": "Where do I find my tracking number?",
+            "answer": "<p>This top-notch T-shirt from Roadster will have you looking fresh all year long. This white piece is incredibly versatile and can be matched with dark or light denim for an evening.<\/p><p><br\/>100% Original Products<\/p><p>Pay on delivery might be available<\/p><p>Easy 30 days returns and exchanges<\/p><p>Try & Buy might be available<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1658318505cfc17b4b-0",
+        "1658318505cfc17b4b-1",
+        "1658318505cfc17b4b-2",
+        "ddea5765-5d65-464e-92c4-c6edf77797a9",
+        "9465e2d1-8bb8-4824-a28e-50ba0078a928",
+        "a37996ee-a32a-4f69-9703-ab7bbe2a8845"
+      ],
+      "settings": {
+        "heading": "FAQs",
+        "bgcolor": "primary",
+        "row_bgcolor": "secondary",
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 60,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "page-header",
+    "1658318505f1feb568"
+  ]
+}

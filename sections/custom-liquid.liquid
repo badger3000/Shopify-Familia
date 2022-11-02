@@ -1,0 +1,137 @@
+<div class="section-spacer">
+  <div class="container">
+    <div class="rich-text-description text-{{section.settings.content_alignment}}">
+      {{ section.settings.custom_liquid }}
+    </div>
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{section.id}}.shopify-section {
+    background:var(--{{- section.settings.bgcolor -}}ColorBody);
+    padding-top:{{section.settings.top_space_desktop}}px;
+    padding-bottom:{{section.settings.bottom_space_desktop}}px;
+    {%- unless section.settings.bgcolor == 'primary' or section.settings.bgcolor == 'gradient' -%}
+    --colorTextBody:var(--{{- section.settings.bgcolor -}}colorTextBody);
+    --heading_color:var(--{{- section.settings.bgcolor -}}_heading_color);
+    {%- endunless -%}
+  }
+  @media only screen and (max-width:575px) {
+    #shopify-section-{{section.id}}.shopify-section{
+      padding-top:{{section.settings.top_space_mobile}}px;
+      padding-bottom:{{section.settings.bottom_space_mobile}}px;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "t:sections.custom-liquid.name",
+  "tag": "section",
+  "class": "custom-liquid-section",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+      "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "label": "t:sections.custom-liquid.settings.content_alignment.label",
+      "default": "center",
+      "options": [
+        {
+          "label": "t:sections.custom-liquid.settings.content_alignment.options.left.label",
+          "value": "left"
+        },
+        {
+          "label": "t:sections.custom-liquid.settings.content_alignment.options.center.label",
+          "value": "center"
+        },
+        {
+          "label": "t:sections.custom-liquid.settings.content_alignment.options.right.label",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:common.header.color_singular_section.label"
+    },
+    {
+      "type": "select",
+      "id": "bgcolor",
+      "label": "t:common.header.background_section.label",
+      "default": "primary",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:common.header.primary.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:common.header.secondary.label"
+        },
+        {
+          "value": "tertiary",
+          "label": "t:common.header.tertiary.label"
+        },
+        {
+          "value": "quaternary",
+          "label": "t:common.header.quaternary.label"
+        },
+        {
+          "value": "gradient",
+          "label": "t:common.header.gradient.label"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:common.header.space_section.label"
+    },
+    {
+      "type": "range",
+      "id": "top_space_desktop",
+      "label": "t:common.top_space_desktop.label",
+      "default": 30,
+      "min": 0,
+      "max": 60,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "bottom_space_desktop",
+      "label": "t:common.bottom_space_desktop.label",
+      "default": 30,
+      "min": 0,
+      "max": 60,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "top_space_mobile",
+      "label": "t:common.top_space_mobile.label",
+      "default": 30,
+      "min": 0,
+      "max": 60,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "bottom_space_mobile",
+      "label": "t:common.bottom_space_mobile.label",
+      "default": 30,
+      "min": 0,
+      "max": 60,
+      "step": 5
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.custom-liquid.presets.name"
+    }
+  ]
+}
+{% endschema %}

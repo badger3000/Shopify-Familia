@@ -1,0 +1,78 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+<div class="yv-page-banner yv-account-page-banner">
+  <div class="page-banner-content">
+    <h2 class="page-banner-title">{{ 'customer.account.title' | t }}</h2>
+  </div>
+</div>
+<section class="shopify-section customer account">
+  <div class="container">
+    {% render 'account-header' %}
+    <div class="account-pages-content">
+      <h5>{{ 'customer.orders.page_title' | t }}</h5>
+      {% paginate customer.orders by 20 %}
+        {%- if customer.orders.size > 0 -%}
+          <div class="table-responsive">
+            <table class="order-history">
+              <caption class="visually-hidden">
+                {{ 'customer.orders.page_title' | t }}
+              </caption>
+              <thead>
+                <tr>
+                  <th id="ColumnOrder" scope="col">{{ 'customer.orders.order_number' | t }}</th>
+                  <th id="ColumnDate" scope="col">{{ 'customer.orders.date' | t }}</th>
+                  <th id="ColumnPayment" scope="col">{{ 'customer.orders.payment_status' | t }}</th>
+                  <th id="ColumnFulfillment" scope="col">{{ 'customer.orders.fulfillment_status' | t }}</th>
+                  <th id="ColumnTotal" scope="col">{{ 'customer.orders.total' | t }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%- for order in customer.orders -%}
+                  <tr>
+                    <td
+                      id="RowOrder-{{ forloop.index }}"
+                      headers="ColumnOrder"
+                      data-label="{{ 'customer.orders.order_number' | t }}"
+                    >
+                      <a
+                        href="{{ order.customer_url }}"
+                        aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
+                      >
+                        {{ order.name }}
+                      </a>
+                    </td>
+                    <td headers="ColumnOrder ColumnDate" data-label="{{ 'customer.orders.date' | t }}">
+                      {{ order.created_at | time_tag: format: 'date' }}
+                    </td>
+                    <td headers="ColumnOrder ColumnPayment" data-label="{{ 'customer.orders.payment_status' | t }}">
+                      <span class="payment-status {{ order.financial_status }}">
+                        {{- order.financial_status_label -}}
+                      </span>
+                    </td>
+                    <td
+                      headers="ColumnOrder ColumnFulfillment"
+                      data-label="{{ 'customer.orders.fulfillment_status' | t }}"
+                    >
+                      {{ order.fulfillment_status_label }}
+                    </td>
+                    <td headers="ColumnOrder ColumnTotal" data-label="{{ 'customer.orders.total' | t }}">
+                      {{ order.total_price | money_with_currency }}
+                    </td>
+                  </tr>
+                {%- endfor -%}
+              </tbody>
+            </table>
+          </div>
+        {%- else -%}
+          <div class="nodatafound_wrapper">
+            <div class="nodatafound_box">
+              <p>{{ 'customer.orders.none' | t }}</p>
+            </div>
+          </div>
+        {%- endif -%}
+        {%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate, anchor: '' %}
+        {%- endif -%}
+      {% endpaginate %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,183 @@
+{% assign limit = section.settings.collections_per_page %}
+{% liquid if section.settings.show_collections == 'selected'
+  assign limit = 100 
+  endif %}
+{% paginate collections by limit %}
+{% if section.settings.banner_image != blank or section.settings.title != blank %}
+<div class="yv-collection-banner yv-main-collection-banner" {% if section.settings.banner == blank and section.settings.bgcolor != blank %}style="background-color:{{ section.settings.bgcolor }};"{% endif %}>
+  {% if section.settings.banner_image != blank %}
+  {%- render 'lazy-image' image : section.settings.banner_image , class : 'banner-img' -%}
+  {% endif %}
+  <div class="collection-banner-content">
+    <h3 class="collection-banner-title" {% if section.settings.textcolor != blank %}style="color:{{ section.settings.textcolor }}"{% endif %}>{{ section.settings.title | escape }}</h3>
+  </div>
+</div>{% endif %}
+<div class="yv-collections-list" style="--layoutRadius:{% if settings.layout_style == 'rounded' %}20px{% else %}0px{% endif %}">
+  <div class="{% if settings.layout_width == 'boxed' %}container{% else %}container-fluid{% endif %}">
+    {%- liquid
+    case section.settings.sort
+      when 'products_high' or 'products_low'
+        assign collections = collections | sort: 'all_products_count'
+      when 'date' or 'date_reversed'
+        assign collections = collections | sort: 'published_at'
+    endcase
+
+    if section.settings.sort == 'products_high' or section.settings.sort == 'date_reversed' or section.settings.sort == 'alphabetical_reversed'
+      assign collections = collections | reverse
+    endif
+  -%}
+    <div class="row">
+      {% liquid 
+        if section.settings.show_collections == 'all'
+          if collections.size > 0
+            for collection in collections  
+            assign delay = 50 | times : forloop.index
+            if settings.enable_animation
+              assign animationAttr = 'data-aos="fade-up" data-aos-delay="' | append : delay | append : '"'  
+            else
+              assign animationAttr = ''
+            endif    
+              render 'collection-grid' collection: collection, animationAttr: animationAttr   
+            endfor
+          else
+            render 'not-found'  item: 'Collection'
+          endif
+        else
+          if section.blocks.size > 0 
+            assign delay = 0.5
+            for block in section.blocks
+              if block.settings.collection != blank
+              assign delay = 50 | times : forloop.index
+              if settings.enable_animation
+                assign animationAttr = 'data-aos="fade-up" data-aos-delay="' | append : delay | append : '"'  
+              else
+                assign animationAttr = ''
+              endif
+                render 'collection-grid' collection: block.settings.collection, collectionImage: block.settings.image, animationAttr: animationAttr  
+              endif
+            endfor
+          else
+            render 'not-found'  item: 'Collection'
+          endif
+        endif %}
+    </div>
+  </div>
+  {% if paginate.pages > 1 %}
+  {% render 'pagination' paginate: paginate %}
+  {% endif %}
+</div>
+{% endpaginate %}
+{% schema %}
+{
+  "name": "t:sections.main-list-collections.name",
+  "tag": "section",
+  "class": "min-collection-section",
+  "max_blocks": 15,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.main-list-collections.settings.title.label",
+      "default": "Collections"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "t:sections.main-list-collections.settings.banner_image.label",
+      "info": "t:sections.main-list-collections.settings.banner_image.info"
+    },{
+      "type": "range",
+      "id": "collections_per_page",
+      "min": 4,
+      "max": 24,
+      "step": 4,
+      "default": 12,
+      "label": "t:sections.main-list-collections.settings.collections_per_page.label"
+    },
+    {
+      "type": "radio",
+      "id": "show_collections",
+      "default": "all",
+      "label": "t:sections.main-list-collections.settings.show_collections.label",
+      "options": [
+        {
+          "value": "all",
+          "label": "t:sections.main-list-collections.settings.show_collections.all.label"
+        },
+        {
+          "value": "selected",
+          "label": "t:sections.main-list-collections.settings.show_collections.selected.label"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "sort",
+      "options": [
+        {
+          "value": "alphabetical",
+          "label": "t:sections.main-list-collections.settings.sort.options__1.label"
+        },
+        {
+          "value": "alphabetical_reversed",
+          "label": "t:sections.main-list-collections.settings.sort.options__2.label"
+        },
+        {
+          "value": "date_reversed",
+          "label": "t:sections.main-list-collections.settings.sort.options__3.label"
+        },
+        {
+          "value": "date",
+          "label": "t:sections.main-list-collections.settings.sort.options__4.label"
+        },
+        {
+          "value": "products_high",
+          "label": "t:sections.main-list-collections.settings.sort.options__5.label"
+        },
+        {
+          "value": "products_low",
+          "label": "t:sections.main-list-collections.settings.sort.options__6.label"
+        }
+      ],
+      "default": "alphabetical",
+      "label": "t:sections.main-list-collections.settings.sort.label",
+      "info": "t:sections.main-list-collections.settings.sort.info"
+    },
+    {
+        "type": "header",
+        "content": "t:common.header.color_section.label"
+    }, 
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "default": "#F8F3EB",
+      "label": "t:sections.main-list-collections.settings.bgcolor.label"
+    },
+    {
+      "type": "color",
+      "id": "textcolor",
+      "default": "#181818",
+      "label": "t:sections.main-list-collections.settings.textcolor.label"
+    }
+    
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "t:sections.main-list-collections.blocks.collection.name",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.main-list-collections.blocks.collection.settings.collection.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.main-list-collections.blocks.collection.settings.image.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

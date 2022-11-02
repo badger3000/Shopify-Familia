@@ -1,0 +1,505 @@
+{
+  "general": {
+    "days": "วัน",
+    "hours": "ชั่วโมง",
+    "minutes": "รายงานการประชุม",
+    "seconds": "วินาที",
+    "password_page": {
+      "login_form_heading": "ป้อนร้านค้าโดยใช้รหัสผ่าน:",
+      "login_password_button": "ใส่โดยใช้รหัสผ่าน",
+      "login_form_password_label": "รหัสผ่าน",
+      "login_form_password_placeholder": "รหัสผ่านของคุณ",
+      "login_form_error": "รหัสผ่านไม่ถูกต้อง!",
+      "login_form_submit": "เข้า",
+      "modal": "โมดอลรหัสผ่าน",
+      "admin_link_html": "คุณเป็นเจ้าของร้านหรือไม่? <a href=\"\/admin\" class=\"link underlined-link\">เข้าสู่ระบบที่นี่<\/a>",
+      "powered_by_shopify_html": "ร้านนี้จะถูกขับเคลื่อนโดย {{ shopify }}",
+      "opening_soon": "โตโด"
+    },
+    "view_detail": "ดูรายละเอียด",
+    "quick_view_heading": "มุมมองด่วน",
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "แชร์บน Facebook",
+        "share_on_twitter": "ทวีตบน Twitter",
+        "share_on_pinterest": "ปักหมุดบน Pinterest"
+      },
+      "links": {
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "pinterest": "Pinterest",
+        "instagram": "Instagram",
+        "tumblr": "Tumblr",
+        "snapchat": "Snapchat",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "linkedin": "Linkedin",
+        "tiktok": "TikTok"
+      }
+    },
+    "continue_shopping": "ช้อปปิ้งต่อ",
+    "go_to_products": "ย้อนกลับ",
+    "no_similar_found": "ขออภัย ไม่พบผลลัพธ์!",
+    "pagination": {
+      "label": "เลขหน้า",
+      "page": "หน้า {{ number }}",
+      "next": "หน้าถัดไป",
+      "previous": "หน้าก่อน"
+    },
+    "search": {
+      "search": "ค้น"
+    },
+    "video": {
+      "button": "เล่น - หยุดชั่วคราว"
+    },
+    "cart": {
+      "view": "ดูรถเข็นของฉัน ({{ count }})",
+      "item_added": "เพิ่มสินค้าในรถเข็นของคุณแล้ว"
+    },
+    "share": {
+      "close": "ปิดการใช้ร่วมกัน",
+      "copy_to_clipboard": "คัดลอกลิงค์",
+      "share_url": "ลิงก์",
+      "success_message": "ลิงก์ที่คัดลอกไปยังคลิปบอร์ด"
+    },
+    "socil": {
+      "links": {
+        "facebook": "โตโด",
+        "twitter": "โตโด",
+        "linkedin": "โตโด",
+        "instagram": "โตโด"
+      }
+    }
+  },
+  "date_formats": {
+    "month_year": "%B %Y"
+  },
+  "newsletter": {
+    "label": "อีเมลของคุณ",
+    "success": "ขอบคุณสําหรับการสมัครสมาชิก",
+    "button_label": "ลงนาม",
+    "email_placeholder": "ที่อยู่อีเมล",
+    "popup_dont_show": "ไม่ต้องแสดงกล่องโต้ตอบนี้อีก"
+  },
+  "accessibility": {
+    "skip_to_text": "ข้ามไปที่เนื้อหา",
+    "skip_to_product_info": "ข้ามไปที่ข้อมูลผลิตภัณฑ์",
+    "close": "ปิด",
+    "unit_price_separator": "ต่อ",
+    "vendor": "ผู้ขาย:",
+    "error": "ความผิดพลาด",
+    "refresh_page": "การเลือกผลลัพธ์การเลือกในการรีเฟรชแบบเต็มหน้า.",
+    "link_messages": {
+      "new_window": "เปิดขึ้นในหน้าต่างใหม่.",
+      "external": "เปิดเว็บไซต์ภายนอก."
+    },
+    "of": "ของ",
+    "next_slide": "เลื่อนไปทางขวา",
+    "previous_slide": "เลื่อนไปทางซ้าย",
+    "loading": "การโหลด..."
+  },
+  "blogs": {
+    "article": {
+      "blog": "บล็อก",
+      "read_more": "อ่านเพิ่มเติม",
+      "read_more_title": "อ่านเพิ่มเติม: {{ title }}",
+      "posted_by": "ติดประกาศโดย {{ author }}",
+      "comments": {
+        "one": "{{ count }} ติชม",
+        "other": "{{ count }} ความ คิด เห็น"
+      },
+      "moderated": "โปรดทราบว่าความคิดเห็นจะต้องได้รับการอนุมัติก่อนที่จะเผยแพร่.",
+      "comment_form_title": "ฝากความคิดของคุณไว้ที่นี่",
+      "name": "ชื่อ",
+      "email": "อีเมล",
+      "message": "ติชม",
+      "post": "ติดประกาศข้อคิดเห็น",
+      "back_to_blog": "กลับไปยังบล็อก",
+      "share": "แชร์บทความนี้",
+      "success": "ความคิดเห็นของคุณถูกโพสต์เรียบร้อยแล้ว! ขอบคุณ!",
+      "success_moderated": "ความคิดเห็นของคุณถูกโพสต์เรียบร้อยแล้ว เราจะเผยแพร่ในอีกสักครู่เนื่องจากบล็อกของเราได้รับการกลั่นกรอง."
+    }
+  },
+  "onboarding": {
+    "product_title": "ตัวอย่างชื่อผลิตภัณฑ์",
+    "collection_title": "เหล่า",
+    "rich_text_page": "ไม่มีเนื้อหาในส่วนนี้ในขณะนี้ ใช้แถบด้านข้างเพื่อเพิ่มวัสดุลงในส่วนนี้."
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "หยิบใส่ตะกร้า",
+      "preorder": "พรีออเดอร์",
+      "coming_soon": "เร็ว ๆ นี้",
+      "description": "การบรรยาย",
+      "one_time_purchase": "ซื้อครั้งเดียว",
+      "reviews": "ความ คิด เห็น",
+      "on_sale": "การขาย",
+      "product_variants": "ผลิตภัณฑ์ย่อย",
+      "option": "เลือก {{title}}",
+      "size_chart_label": "แผนภูมิขนาด",
+      "tax_included": "รวมภาษีแล้ว.",
+      "shipping_policy": "ค่าจัดส่งคํานวณเมื่อชําระเงิน.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">จัด ส่ง<\/a> คํานวณเมื่อชําระเงิน",
+      "media": {
+        "open_featured_media": "เปิดสื่อเด่นในมุมมองแกลเลอรี",
+        "open_media": "เปิดสื่อ {{ index }} ในมุมมองแกลเลอรี",
+        "play_model": "เล่นตัวแสดง 3 มิติ",
+        "play_video": "เล่นวิดีโอ",
+        "view_in_ar_button": "ดูในพื้นที่ของคุณ"
+      },
+      "quantity": {
+        "label": "เลือกปริมาณ",
+        "input_label": "ปริมาณสําหรับ {{ product }}",
+        "increase": "เพิ่มปริมาณสําหรับ {{ product }}",
+        "decrease": "ลดปริมาณสําหรับ {{ product }}"
+      },
+      "pickup_availability": {
+        "view_store_info": "ดูข้อมูลร้านค้า",
+        "check_other_stores": "ตรวจสอบห้องว่างที่ร้านอื่น",
+        "pick_up_available": "มีรถกระบะ",
+        "pick_up_unavailable": "การรับสินค้าไม่พร้อมใช้งานในขณะนี้",
+        "pick_up_available_at_html": "สามารถรับสินค้าที่ <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "ขณะนี้ไม่สามารถรับสินค้าที่ <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "unavailable": "ไม่สามารถโหลดความพร้อมใช้งานของการรับสินค้าได้",
+        "refresh": "ฟื้นฟู"
+      },
+      "price": {
+        "from_price_html": "จาก {{ price }}",
+        "regular_price": "ราคาปกติ",
+        "sale_price": "ราคาขาย",
+        "unit_price": "ราคาต่อหน่วย",
+        "saved": "คุณบันทึก"
+      },
+      "sold_out": "ขายหมดแล้ว",
+      "off": "ไป",
+      "similar_products": "ผลิตภัณฑ์ที่คล้ายกัน",
+      "view_product": "ดูผลิตภัณฑ์",
+      "more_options": "{{item}}+ อีก",
+      "unavailable": "ไม่",
+      "vendor": "ผู้ขาย",
+      "onboarding_product_text": "เลือกผลิตภัณฑ์เพื่อแสดงรายละเอียด",
+      "onboarding": {
+        "options": {
+          "option1": {
+            "label": "สี",
+            "value1": "Red",
+            "value2": "Green",
+            "value3": "Blue",
+            "value4": "Yellow",
+            "value5": "Pink"
+          },
+          "option2": {
+            "label": "ขนาด",
+            "value1": "XS",
+            "value2": "S",
+            "value3": "M",
+            "value4": "L",
+            "value5": "XL"
+          }
+        }
+      }
+    }
+  },
+  "templates": {
+    "404": {
+      "tag": "อุ๊บส์!",
+      "title": "ไม่พบเพจ",
+      "subtext_html": "เพจที่คุณร้องขอไม่มีอยู่ คลิก <a href=\"\/collections\/all\">here<\/a> เพื่อซื้อสินค้าต่อ.",
+      "button_txt": "ไปยังโฮมเพจ"
+    },
+    "search": {
+      "no_results": "ไม่พบผลลัพธ์สําหรับ “{{ terms }}”.",
+      "no_results_simple": "ไม่พบผลลัพธ์.",
+      "no_suggestion": "ไม่พบคําแนะนํา.",
+      "no_results_sub": "การตรวจสอบการสะกดหรือใช้คําหรือวลีอื่น.",
+      "page": "หน้า",
+      "product": "ผลิตภัณฑ์",
+      "article": "บทความ",
+      "results_with_count": {
+        "one": "{{ count }} พบผลลัพธ์สําหรับ “{{ terms }}”",
+        "other": "{{ count }} พบผลลัพธ์สําหรับ “{{ terms }}”"
+      },
+      "title": "ผลลัพธ์การค้นหา",
+      "drawer_placeholder": "ค้น",
+      "drawer_no_results": "ไม่พบผลลัพธ์.",
+      "drawer_all_results": "ดูผลลัพธ์ทั้งหมด",
+      "drawer_search": "หา",
+      "drawer_results": "ผลลัพธ์",
+      "drawer_close": "ปิดลิ้นชักค้นหา",
+      "drawer_recent_title": "การค้นหาล่าสุด"
+    },
+    "cart": {
+      "cart": "เกวียน"
+    },
+    "contact": {
+      "form": {
+        "name": "ชื่อ",
+        "email": "อีเมล",
+        "phone": "หมายเลขโทรศัพท์",
+        "comment": "ติชม",
+        "send": "ส่ง",
+        "post_success": "ขอบคุณที่ติดต่อเรา เราจะติดต่อกลับโดยเร็วที่สุด.",
+        "error_heading": "โปรดปรับสิ่งต่อไปนี้:"
+      }
+    }
+  },
+  "sections": {
+    "announcement": {
+      "heading": "ประกาศ",
+      "close": "ปิดประกาศ"
+    },
+    "header": {
+      "menu": "เมนู",
+      "cart_count": {
+        "one": "{{ count }} รายการ",
+        "other": "{{ count }} รายการ"
+      }
+    },
+    "cart": {
+      "title": "รถเข็นของคุณ",
+      "heading_html": "ในกระเป๋าของคุณ <span data-cart-item-count=\"\">{{itemCount}}<\/span> รายการ",
+      "caption": "สินค้าในรถเข็น",
+      "price_detail": "รายละเอียดราคา",
+      "remove_title": "ถอด {{ title }}",
+      "remove": "ถอด",
+      "subtotal": "ทั้งหมด",
+      "discount": "ส่วนลด",
+      "discount_label": "รหัสคูปัน",
+      "new_subtotal": "ผลรวมย่อย",
+      "note": "คําแนะนําพิเศษสําหรับผู้ขาย",
+      "note_heading": "ทิ้งบันทึกย่อไว้กับใบสั่ง",
+      "checkout": "เช็คเอาท์",
+      "empty": "รถเข็นของคุณว่างเปล่า",
+      "view_cart": "ดูรถเข็น",
+      "payment": "วิธีการชําระเงิน",
+      "cart_error": "มีข้อผิดพลาดขณะอัปเดตรถเข็นของคุณ โปรดลองอีกครั้ง.",
+      "cart_quantity_error_html": "คุณสามารถเพิ่มได้เท่านั้น {{ quantity }} ของรายการนี้ไปยังรถเข็นของคุณ.",
+      "taxes_and_shipping_policy_at_checkout_html": "ภาษีและ <a href=\"{{ link }}\">จัด ส่ง<\/a> คํานวณเมื่อชําระเงิน",
+      "taxes_included_but_shipping_at_checkout": "รวมภาษีและค่าจัดส่งที่คํานวณเมื่อชําระเงิน",
+      "taxes_included_and_shipping_policy_html": "รวมภาษีแล้ว. <a href=\"{{ link }}\">จัด ส่ง<\/a> คํานวณเมื่อชําระเงิน.",
+      "taxes_and_shipping_at_checkout": "ภาษีและค่าจัดส่งที่คํานวณได้เมื่อชําระเงิน",
+      "headings": {
+        "product": "ผลิตภัณฑ์",
+        "price": "ราคา",
+        "total": "ทั้งหมด",
+        "quantity": "ปริมาณ"
+      },
+      "update": "อัพเดต",
+      "login": {
+        "title": "มีบัญชี?",
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">เข้าสู่ระบบ<\/a> เช็คเอาท์ได้เร็วขึ้น."
+      },
+      "shipping_estimates": {
+        "heading": "รับค่าจัดส่งโดยประมาณสําหรับคําสั่งซื้อของคุณ",
+        "country": "ประเทศ",
+        "province": "จังหวัด",
+        "zip": "รหัสไปรษณีย์",
+        "button": "รับการประเมิน",
+        "error": "ความผิดพลาด",
+        "not_available": "เราจะไม่จัดส่งไปยังปลายทางนี้."
+      }
+    },
+    "footer": {
+      "payment": "วิธีการชําระเงิน"
+    },
+    "featured_article": {
+      "view_all": "ดูทั้งหมด",
+      "onboarding_date": "DD MM YYYY",
+      "onboarding_title": "โพสต์ในบล็อก",
+      "onboarding_content": "ให้ข้อมูลสรุปเกี่ยวกับโพสต์บล็อกของคุณแก่ลูกค้าของคุณ"
+    },
+    "featured_product": {
+      "heading": "น่า สนใจ"
+    },
+    "collection_list": {
+      "view_all": "ดูทั้งหมด",
+      "view": "สํารวจ"
+    },
+    "collection_template": {
+      "apply": "ใช้",
+      "clear": "ใส",
+      "clear_all": "ล้างทั้งหมด",
+      "empty": "ไม่พบสินค้า",
+      "from": "จาก",
+      "filter_and_sort": "กรองและเรียงลําดับ",
+      "filter_by_label": "กรอง",
+      "filter_button": "ใช้",
+      "filter_cancel_button": "ยกเลิก",
+      "filter_show_more": "แสดงเพิ่มเติม",
+      "filter_show_less": "แสดงน้อยลง",
+      "filters_selected": {
+        "one": "{{ count }} เลือก",
+        "other": "{{ count }} เลือก"
+      },
+      "max_price": "ราคาสูงสุดคือ {{ price }}",
+      "product_count": {
+        "one": "{{ product_count }} ของ {{ count }} ผลิตภัณฑ์",
+        "other": "{{ product_count }} ของ {{ count }} ผลิตภัณฑ์"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} ผลิตภัณฑ์",
+        "other": "{{ count }} ผลิตภัณฑ์"
+      },
+      "reset": "รี เซ็ต",
+      "sort_button": "ประเภท",
+      "sort_by_label": "เรียงลําดับตาม",
+      "title": "เหล่า",
+      "to": "ถึง",
+      "use_fewer_filters_html": "ใช้ตัวกรองน้อยลงหรือ <a class=\"{{ class }}\" href=\"{{ link }}\">ล้างทั้งหมด<\/a>"
+    },
+    "video": {
+      "load_video": "โหลดวิดีโอ: {{ description }}"
+    },
+    "contact": {
+      "name": "ชื่อ",
+      "email": "อีเมล",
+      "number": "เบอร์ติดต่อ",
+      "message": "ข้อความ"
+    },
+    "localization": {
+      "language_label": "โตโด"
+    }
+  },
+  "localization": {
+    "update": "อัพเดต",
+    "country_label": "ประเทศ\/ภูมิภาค",
+    "language_label": "ภาษา",
+    "update_language": "อัพเดตภาษา",
+    "update_country": "อัพเดตประเทศ\/ภูมิภาค"
+  },
+  "customer": {
+    "account": {
+      "title": "ลูกค้าองค์กรของฉัน",
+      "details": "รายละเอียดบัญชี",
+      "view_addresses": "ดูที่อยู่",
+      "return": "กลับไปที่รายละเอียดลูกค้าองค์กร"
+    },
+    "account_fallback": "บัญชี",
+    "activate_account": {
+      "title": "เรียกใช้บัญชี",
+      "subtext": "สร้างรหัสผ่านของคุณเพื่อเปิดใช้งานบัญชีผู้ใช้ของคุณ.",
+      "password": "รหัสผ่าน",
+      "password_confirm": "ยืนยันรหัสผ่าน",
+      "submit": "เรียกใช้บัญชี",
+      "cancel": "ปฏิเสธการเชิญ"
+    },
+    "addresses": {
+      "title": "ที่อยู่",
+      "default": "ที่อยู่เริ่มต้น",
+      "address_count": "ที่อยู่ {{ count }}",
+      "add_new": "เพิ่มที่อยู่ใหม่",
+      "edit_address": "แก้ไขที่อยู่",
+      "first_name": "ชื่อ",
+      "last_name": "นามสกุล",
+      "company": "บริษัท",
+      "address1": "ที่อยู่ 1",
+      "address2": "ที่อยู่ 2",
+      "city": "เมือง",
+      "country": "ประเทศ\/ภูมิภาค",
+      "province": "จังหวัด",
+      "zip": "รหัสไปรษณีย์",
+      "phone": "โทรศัพท์",
+      "set_default": "ตั้งเป็นที่อยู่เริ่มต้น",
+      "add": "เพิ่มที่อยู่",
+      "update": "อัพเดตที่อยู่",
+      "cancel": "ยกเลิก",
+      "edit": "แก้ไข",
+      "delete": "ลบ",
+      "delete_confirm": "คุณแน่ใจหรือไม่ว่าคุณต้องการลบที่อยู่นี้?"
+    },
+    "log_in": "เข้าสู่ระบบ",
+    "log_out": "ออกจากระบบ",
+    "login_page": {
+      "cancel": "ยกเลิก",
+      "create_account": "สร้างบัญชี",
+      "new_account_heading": "สร้างบัญชี",
+      "new_account_subtext": "การลงทะเบียนสําหรับไซต์นี้ช่วยให้คุณสามารถเข้าถึงสถานะและประวัติการสั่งซื้อของคุณได้ เราจะตั้งค่าบัญชีใหม่ให้คุณในเวลาไม่นาน สําหรับสิ่งนี้จะขอข้อมูลที่จําเป็นเพื่อให้กระบวนการซื้อเร็วขึ้นและง่ายขึ้น",
+      "subtext": "หากคุณได้สร้างบัญชีกับเราโปรดป้อน.",
+      "email": "อีเมล",
+      "forgot_password": "ลืมรหัสผ่าน?",
+      "guest_continue": "ต่อเนื่อง",
+      "guest_title": "ดําเนินการต่อในฐานะผู้เยี่ยมชม",
+      "password": "รหัสผ่าน",
+      "title": "เข้า สู่ ระบบ",
+      "sign_in": "เข้าสู่ระบบ",
+      "submit": "ส่ง"
+    },
+    "order": {
+      "heading": "รายละเอียดใบสั่ง",
+      "title": "สั่ง {{ name }}",
+      "date_html": "วางบน {{ date }}",
+      "cancelled_html": "ใบสั่งถูกยกเลิกเมื่อ {{ date }}",
+      "cancelled_reason": "เหตุผล: {{ reason }}",
+      "billing_address": "ที่อยู่สําหรับเรียกเก็บเงิน",
+      "payment_status": "สถานะการชําระเงิน",
+      "shipping_address": "ที่อยู่สําหรับจัดส่ง",
+      "fulfillment_status": "สถานะการเติมสินค้า",
+      "discount": "ส่วนลด",
+      "shipping": "จัด ส่ง",
+      "tax": "ภาษี",
+      "product": "ผลิตภัณฑ์",
+      "sku": "SKU",
+      "price": "ราคา",
+      "quantity": "ปริมาณ",
+      "total": "ทั้งหมด",
+      "fulfilled_at_html": "สําเร็จแล้ว {{ date }}",
+      "track_shipment": "ติดตามการจัดส่ง",
+      "tracking_url": "ลิงค์การติดตาม",
+      "tracking_company": "พาหะ",
+      "tracking_number": "หมายเลขการติดตาม",
+      "subtotal": "ผลรวมย่อย",
+      "back": "กลับไปที่ใบสั่ง"
+    },
+    "orders": {
+      "title": "ใบ สั่ง",
+      "page_title": "ประวัติใบสั่ง",
+      "order_number": "สั่ง",
+      "order_number_link": "หมายเลขใบสั่ง {{ number }}",
+      "date": "วันที่",
+      "payment_status": "สถานะการชําระเงิน",
+      "fulfillment_status": "สถานะการเติมสินค้า",
+      "total": "ทั้งหมด",
+      "none": "คุณยังไม่ได้ออกคําสั่งใดๆ."
+    },
+    "recover_password": {
+      "title": "ตั้งค่ารหัสผ่านของคุณใหม่",
+      "subtext": "เราจะส่งอีเมลถึงคุณเพื่อรีเซ็ตรหัสผ่านของคุณ",
+      "success": "เราได้ส่งอีเมลพร้อมลิงก์เพื่ออัปเดตรหัสผ่านของคุณแล้ว."
+    },
+    "register": {
+      "title": "สร้างบัญชี",
+      "subtext": "หากคุณต้องการสร้างบัญชีกับเราโปรดป้อน.",
+      "full_name": "ชื่อเต็ม",
+      "first_name": "ชื่อ",
+      "last_name": "นามสกุล",
+      "email": "อีเมล",
+      "password": "รหัสผ่าน",
+      "submit": "ไซน์อัพ",
+      "login_heading": "มีบัญชีอยู่แล้ว?",
+      "login_button": "เข้า สู่ ระบบ",
+      "login_subtext": "การลงทะเบียนสําหรับไซต์นี้ช่วยให้คุณสามารถเข้าถึงสถานะและประวัติการสั่งซื้อของคุณได้ เราจะตั้งค่าบัญชีใหม่ให้คุณในเวลาไม่นาน สําหรับสิ่งนี้จะขอข้อมูลที่จําเป็นเพื่อให้กระบวนการซื้อเร็วขึ้นและง่ายดายr"
+    },
+    "reset_password": {
+      "title": "ตั้งค่ารหัสผ่านบัญชีผู้ใช้ใหม่",
+      "subtext": "ใส่รหัสผ่านใหม่สําหรับ {{ email }}",
+      "password": "รหัสผ่าน",
+      "password_confirm": "ยืนยันรหัสผ่าน",
+      "submit": "ตั้งค่ารหัสผ่านใหม่"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "นี่ไง {{ value }} บัตรของขวัญสําหรับ {{ shop }}!",
+      "subtext": "บัตรของขวัญของคุณ",
+      "gift_card_code": "รหัสบัตรของขวัญ",
+      "shop_link": "ช้อปปิ้งต่อ",
+      "remaining_html": "เหลือ {{ balance }}",
+      "add_to_apple_wallet": "เพิ่มลงในกระเป๋าสตางค์ Apple",
+      "qr_image_alt": "รหัส QR - สแกนเพื่อแลกใช้บัตรของขวัญ",
+      "copy_code": "คัดลอกรหัส",
+      "expired": "หมด อายุ",
+      "copy_code_success": "คัดลอกรหัสเสร็จเรียบร้อยแล้ว",
+      "print_gift_card": "พิมพ์"
+    }
+  }
+}

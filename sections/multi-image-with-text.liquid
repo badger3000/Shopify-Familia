@@ -1,0 +1,335 @@
+<div class="multi-img-content">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'heading' %}
+        {%- if block.settings.heading != blank -%}
+          <div class="container sm-container">
+            <div class="section-heading">
+              <h2>{{ block.settings.heading }}</h2>
+            </div>
+          </div>
+        {% endif %}
+      {% when 'image' %}
+        <div
+          class="multi-imgs-box image-position-right multi-image"
+          style="
+            --imageShadowColor:{{ block.settings.image_shadow_color }};
+            --layoutRadius:{% if settings.layout_style == 'rounded' %}20px{% else %}0px{% endif %};
+            --multiImageBackground:var(--{{- block.settings.bgcolor -}}ColorBody);
+            {%- unless block.settings.bgcolor == 'primary' -%}
+            --colorTextBody:var(--{{- block.settings.bgcolor -}}colorTextBody);
+            --heading_color:var(--{{- block.settings.bgcolor -}}_heading_color);
+            {%- endunless -%}
+          "
+        >
+          <div class="container sm-container">
+            <div class="row">
+              <div class="image-one col-12 col-sm-6 col-md-6 col-lg-6">
+                <div
+                  class="yv-imgbox-container  image-shadow-{{ block.settings.image_shadow }}"
+                  style="--imageFocal:{{ block.settings.first_image_focal }}"
+                  data-aos="fade-up"
+                  data-offset="500"
+                >
+                  <div class="yv-img-content">
+                    {%- if block.settings.first_image != blank -%}
+                      {% render 'lazy-image', image: block.settings.first_image %}
+                    {%- else -%}
+                      {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+              <div class="image-second col-12 col-sm-6 col-md-6 col-lg-6">
+                <div
+                  class="yv-imgbox-container  image-shadow-{{ block.settings.image_shadow }}"
+                  style="--imageFocal:{{ block.settings.second_image_focal }}"
+                  data-aos="fade-down"
+                  data-offset="500"
+                >
+                  <div class="yv-img-content">
+                    {%- if block.settings.second_image != blank -%}
+                      {% render 'lazy-image', image: block.settings.second_image %}
+                    {%- else -%}
+                      {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% when 'text' %}
+        {%- if block.settings.content != blank -%}
+          <div class="container sm-container">
+            <div class="multi-imgs-desc">
+              {{ block.settings.content }}
+            </div>
+          </div>
+        {% endif %}
+    {% endcase %}
+  {% endfor %}
+</div>
+<style>
+  #shopify-section-{{ section.id }}.shopify-section {
+    padding-top:{{ section.settings.top_space_desktop }}px;
+    padding-bottom:{{ section.settings.bottom_space_desktop }}px;
+  }
+  @media only screen and (max-width:991px) {
+    #shopify-section-{{ section.id }}.shopify-section{
+      padding-top:{{ section.settings.top_space_mobile }}px;
+      padding-bottom:{{ section.settings.bottom_space_mobile }}px;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "t:sections.multi-image-with-text.name",
+  "tag": "section",
+  "class": "multi-images-with-text-section",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:common.header.space_section.label"
+    },
+    {
+      "type": "range",
+      "id": "top_space_desktop",
+      "label": "t:common.top_space_desktop.label",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "bottom_space_desktop",
+      "label": "t:common.bottom_space_desktop.label",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "top_space_mobile",
+      "label": "t:common.top_space_mobile.label",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "bottom_space_mobile",
+      "label": "t:common.bottom_space_mobile.label",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.multi-image-with-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:sections.multi-image-with-text.blocks.heading.settings.heading.label",
+          "default": "Multi image with text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.multi-image-with-text.blocks.text.name",
+      "settings": [
+        {
+          "type": "richtext",
+          "label": "t:sections.multi-image-with-text.blocks.text.settings.content.label",
+          "id": "content",
+          "default": "<p>To provide clients insight into your brand, pair words with any image. Here you can tell a narrative, explain a product feature, or introduce a new campaign.</p>"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "t:sections.multi-image-with-text.blocks.image.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "first_image",
+          "label": "t:sections.multi-image-with-text.blocks.image.settings.first_image.label"
+        },
+        {
+          "type": "image_picker",
+          "label": "t:sections.multi-image-with-text.blocks.image.settings.second_image.label",
+          "id": "second_image"
+        },
+        {
+          "type": "header",
+          "content": "t:common.header.focal_section.label"
+        },
+        {
+          "type": "select",
+          "id": "first_image_focal",
+          "label": "t:common.image_focal.heading.first_image.label",
+          "default": "center",
+          "options": [
+            {
+              "value": "top left",
+              "label": "t:common.image_focal.options.top-left.label"
+            },
+            {
+              "value": "top center",
+              "label": "t:common.image_focal.options.top-center.label"
+            },
+            {
+              "value": "top right",
+              "label": "t:common.image_focal.options.top-right.label"
+            },
+            {
+              "value": "center left",
+              "label": "t:common.image_focal.options.center-left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:common.image_focal.options.center.label"
+            },
+            {
+              "value": "center right",
+              "label": "t:common.image_focal.options.center-right.label"
+            },
+            {
+              "value": "bottom left",
+              "label": "t:common.image_focal.options.bottom-left.label"
+            },
+            {
+              "value": "bottom center",
+              "label": "t:common.image_focal.options.bottom-center.label"
+            },
+            {
+              "value": "bottom right",
+              "label": "t:common.image_focal.options.bottom-right.label"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "second_image_focal",
+          "label": "t:common.image_focal.heading.second_image.label",
+          "default": "center",
+          "options": [
+            {
+              "value": "top left",
+              "label": "t:common.image_focal.options.top-left.label"
+            },
+            {
+              "value": "top center",
+              "label": "t:common.image_focal.options.top-center.label"
+            },
+            {
+              "value": "top right",
+              "label": "t:common.image_focal.options.top-right.label"
+            },
+            {
+              "value": "center left",
+              "label": "t:common.image_focal.options.center-left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:common.image_focal.options.center.label"
+            },
+            {
+              "value": "center right",
+              "label": "t:common.image_focal.options.center-right.label"
+            },
+            {
+              "value": "bottom left",
+              "label": "t:common.image_focal.options.bottom-left.label"
+            },
+            {
+              "value": "bottom center",
+              "label": "t:common.image_focal.options.bottom-center.label"
+            },
+            {
+              "value": "bottom right",
+              "label": "t:common.image_focal.options.bottom-right.label"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "image_shadow",
+          "label": "t:sections.multi-image-with-text.blocks.image.settings.image_shadow.label",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "t:common.header.color_section.label"
+        },
+        {
+          "type": "select",
+          "id": "bgcolor",
+          "label": "t:common.header.background_section.label",
+          "default": "secondary",
+          "options": [
+            {
+              "value": "primary",
+              "label": "t:common.header.primary.label"
+            },
+            {
+              "value": "secondary",
+              "label": "t:common.header.secondary.label"
+            },
+            {
+              "value": "tertiary",
+              "label": "t:common.header.tertiary.label"
+            },
+            {
+              "value": "quaternary",
+              "label": "t:common.header.quaternary.label"
+            },
+            {
+              "value": "gradient",
+              "label": "t:common.header.gradient.label"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "image_shadow_color",
+          "label": "t:sections.multi-image-with-text.blocks.image.settings.image_shadow_color.label",
+          "default": "#dddddd"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.multi-image-with-text.presets.name",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

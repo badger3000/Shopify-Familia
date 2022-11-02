@@ -1,0 +1,44 @@
+{% if section.settings.show_description or section.settings.content_heading != blank %}
+<div class="yv-product-detail-tabs {{ position }}" id="yv-product-tabs">
+    <div class="yv-tabs-wrapper">
+        <div class="yv-tabs-heading-wrapper">
+            {% if section.settings.width == 'full' %}
+            <div class="container">
+            {% endif %}
+                {% assign tabContentAlignment = section.settings.accordion_content_alignment %}
+                {% if section.settings.accordion_content_alignment == 'left' %}
+                    {% assign tabContentAlignment = 'start' %}
+                {% elsif section.settings.accordion_content_alignment == 'right'%}
+                    {% assign tabContentAlignment = 'end' %}
+                {% endif%}
+                <ul class="list-unstyled yv-tabs align-{{ tabContentAlignment }}">
+                    {% if section.settings.show_description %}
+                    <li class="yv-tab-item active yv-tab-product-item" content="tabContentDescription"><a class="yv-tab-link" href="#tabContentDescription">{{ 'products.product.description' | t }}</a></li>
+                    {% endif %} {% if section.settings.content_heading != blank %}
+                    <li class="yv-tab-item yv-tab-product-item" content="tabContentWrapper"><a class="yv-tab-link" href="#tabContentWrapper">{{ section.settings.content_heading }}</a></li>
+                    {% endif %}
+                </ul>
+                {% if section.settings.width == 'full' %}
+            </div>
+        {% endif %}
+        </div>
+        <div class="yv-tab-content text-{{ section.settings.accordion_content_alignment }}">
+            {% if section.settings.width == 'full' %}
+            <div class="container">
+            {% endif %}
+                {% if section.settings.show_description %}
+                <div class="yv-tab-pane yv-product-detail-tab active" id="tabContentDescription">
+                    {{ product.description | replace: '<table ','<div class="table-responsive"><table' | replace: '</table>', '</table></div>' }}
+            </div>
+            {% endif %} {% if section.settings.content_heading != blank %}
+            <div class="yv-tab-pane yv-product-detail-tab" id="tabContentWrapper">
+                {% if section.settings.content %} {{ section.settings.content }} {% else %} {{ 'onboarding.rich_text_page' | t }} {% endif %}
+            </div>
+            {% endif %}
+            {% if section.settings.width == 'full' %}
+        </div>
+    {% endif %}
+    </div>
+</div>
+</div>
+{% endif %}

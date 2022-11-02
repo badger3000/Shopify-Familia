@@ -1,0 +1,48 @@
+{% if section.settings.show_description or section.settings.content_heading != blank %}
+<div class="yv-product-accordion {{ position }}" id="yv-product-accordion">
+  
+  {% if section.settings.width == 'full' %}
+    <div class="container">
+    {% endif %}
+  {% if section.settings.show_description %}
+  <details class="yv-accordion-card">
+    <summary class="yv-accordion-header" content="accordion-content-description">
+      <h6>{{ 'products.product.description' | t }}</h6>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 14 14" xml:space="preserve">
+        <rect class="v-line" x="6" y="0" width="2.1" height="14"/>
+        <rect class="h-line" x="6" transform="matrix(6.123234e-17 -1 1 6.123234e-17 0 14)" width="2.1" height="14"/>
+      </svg>
+    </summary>
+    <div id="accordion-content-description" class="yv-accordion-content">
+      <div class="yv-content-body">
+        {{ product.description | replace: '<table', '<div class="table-responsive"><table' | replace: '</table>', '</table></div>' }}
+      </div>
+    </div>
+  </details>
+  {% endif %}
+  {% if section.settings.content_heading != blank %}
+  <details class="yv-accordion-card">
+    <summary class="yv-accordion-header" content="accordion-content-{{ section.id }}">
+      <h6>{{ section.settings.content_heading }}</h6>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 14 14" xml:space="preserve">
+        <rect class="v-line" x="6" y="0" width="2.1" height="14"/>
+        <rect class="h-line" x="6" transform="matrix(6.123234e-17 -1 1 6.123234e-17 0 14)" width="2.1" height="14"/>
+      </svg>
+    </summary>
+    <div id="accordion-content-{{ section.id }}" class="yv-accordion-content">
+      <div class="yv-content-body">
+      {% if section.settings.content %}
+      {{ section.settings.content }}
+      {% else %}
+      {{ 'onboarding.rich_text_page' | t }}
+      {% endif %}
+      </div>
+    </div>
+  </details>
+  {% endif %}
+  
+  {% if section.settings.width == 'full' %}
+  </div>
+    {% endif %}
+</div>
+{% endif %}
