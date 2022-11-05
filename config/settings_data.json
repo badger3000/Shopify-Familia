@@ -140,15 +140,16 @@
           "footer-4"
         ],
         "settings": {
-          "image_width": 100,
+          "image": "shopify:\/\/shop_images\/BRAND-logo.png",
+          "image_width": 70,
           "subtext": "",
           "enable_language_selector": true,
           "enable_currency_selector": true,
           "payment_enable": true,
-          "footer_bg": "#000000",
-          "footer_heading": "#a5a2a2",
-          "footer_text": "#7e7e7e",
-          "footer_text_hover": "#e5e5e5"
+          "footer_bg": "#dfdfdf",
+          "footer_heading": "#2d2d2d",
+          "footer_text": "#2d2d2d",
+          "footer_text_hover": "#2d2d2d"
         }
       },
       "offer-sidebar": {
