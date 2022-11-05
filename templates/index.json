@@ -398,6 +398,7 @@
     },
     "16636570176fed7d3d": {
       "type": "featured-articles",
+      "disabled": true,
       "blocks": {
         "16636570177d45139e-0": {
           "type": "article",
