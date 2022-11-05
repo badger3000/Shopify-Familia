@@ -36,6 +36,7 @@
         },
         "166365679366efee4b-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
@@ -66,6 +67,7 @@
         },
         "166365679366efee4b-2": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
@@ -96,6 +98,7 @@
         },
         "166365679366efee4b-3": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
