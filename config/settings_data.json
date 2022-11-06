@@ -149,7 +149,7 @@
           "payment_enable": true,
           "footer_bg": "#dfdfdf",
           "footer_heading": "#2d2d2d",
-          "footer_text": "#2d2d2d",
+          "footer_text": "#181818",
           "footer_text_hover": "#2d2d2d"
         }
       },
