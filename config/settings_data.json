@@ -57,6 +57,7 @@
     "saved_amount_style": "percentage",
     "option_title_font_family": "--heading-font-family",
     "price_font_family": "--heading-font-family",
+    "show_similar": false,
     "show_similar_text": false,
     "similar_condition": "vendor",
     "show_reviews": false,
