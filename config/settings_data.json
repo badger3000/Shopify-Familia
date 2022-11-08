@@ -143,7 +143,7 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/BRAND-logo.png",
           "image_width": 250,
-          "subtext": "<p>FAMILIA SKATESHOP<\/p><p>2833 HENNEPIN AVE<\/p><p>MINNEAPOLIS MN 55408<\/p><p>PHONE: 612-353-6930<\/p>",
+          "subtext": "<p>FAMILIA SKATEBOARDING<\/p><p>2833 HENNEPIN AVE<\/p><p>MINNEAPOLIS MN 55408<\/p><p>PHONE: 612-353-6930<\/p>",
           "enable_language_selector": false,
           "enable_currency_selector": false,
           "payment_enable": true,
