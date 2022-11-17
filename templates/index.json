@@ -135,10 +135,10 @@
         "166365679366efee4b-3"
       ],
       "settings": {
-        "nav_style": "dots",
+        "nav_style": "arrows-bottom-right",
         "content_below_image": false,
-        "rotate": false,
-        "interval": 5,
+        "rotate": true,
+        "interval": 7,
         "desktop_height": "adapt_image",
         "mobile_height": "adapt_image",
         "bgcolor": "primary"
