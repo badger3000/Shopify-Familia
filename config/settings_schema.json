@@ -1174,6 +1174,12 @@
         "id": "favicon",
         "label": "t:settings_schema.favicon.settings.favicon.label",
         "info": "t:settings_schema.favicon.settings.favicon.info"
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon-apple-touch",
+        "label": "t:settings_schema.favicon-apple-touch.settings.favicon.label",
+        "info": "t:settings_schema.favicon-apple-touch.settings.favicon.info"
       }
     ]
   }
