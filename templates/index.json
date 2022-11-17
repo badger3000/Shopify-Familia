@@ -12,7 +12,7 @@
             "banner_subtitle": "",
             "banner_title": "",
             "banner_desc": "",
-            "desktop_title_size": 70,
+            "desktop_title_size": 50,
             "mobile_title_size": 36,
             "button_text": "",
             "button_link": "shopify:\/\/collections\/all",
@@ -416,6 +416,7 @@
         },
         "16636570177d45139e-2": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": ""
           }
