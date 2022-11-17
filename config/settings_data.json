@@ -65,6 +65,7 @@
     "product_grid_content_alignment": "text-center",
     "enableScrollToTop": true,
     "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
+    "favicon-apple-touch": "shopify:\/\/shop_images\/apple-touch-icon.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/SHOPIFY-LOGO-1.png",
     "checkout_logo_size": "large",
     "sections": {
