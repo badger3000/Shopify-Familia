@@ -138,7 +138,7 @@
         "nav_style": "arrows-bottom-right",
         "content_below_image": false,
         "rotate": true,
-        "interval": 7,
+        "interval": 5,
         "desktop_height": "adapt_image",
         "mobile_height": "adapt_image",
         "bgcolor": "primary"
