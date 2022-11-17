@@ -12,7 +12,7 @@
             "banner_subtitle": "",
             "banner_title": "",
             "banner_desc": "",
-            "desktop_title_size": 70,
+            "desktop_title_size": 26,
             "mobile_title_size": 36,
             "button_text": "",
             "button_link": "shopify:\/\/collections\/all",
@@ -135,9 +135,9 @@
         "166365679366efee4b-3"
       ],
       "settings": {
-        "nav_style": "dots",
+        "nav_style": "arrows-bottom-right",
         "content_below_image": false,
-        "rotate": false,
+        "rotate": true,
         "interval": 5,
         "desktop_height": "adapt_image",
         "mobile_height": "adapt_image",
@@ -402,33 +402,34 @@
     "16636570176fed7d3d": {
       "type": "featured-articles",
       "blocks": {
+        "16636570177d45139e-1": {
+          "type": "article",
+          "settings": {
+            "article": "news\/stussy-holiday-22"
+          }
+        },
         "16636570177d45139e-0": {
           "type": "article",
           "settings": {
             "article": "news\/nike-sb-x-huf-dunk-blind-bag-release"
           }
         },
-        "16636570177d45139e-1": {
-          "type": "article",
-          "settings": {
-            "article": ""
-          }
-        },
         "16636570177d45139e-2": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": ""
           }
         }
       },
       "block_order": [
-        "16636570177d45139e-0",
         "16636570177d45139e-1",
+        "16636570177d45139e-0",
         "16636570177d45139e-2"
       ],
       "settings": {
         "overlay_content": true,
-        "heading": "Add Blog posts here",
+        "heading": "SHOP UPDATES",
         "button": "View all",
         "link": "",
         "bgcolor": "primary",
