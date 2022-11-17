@@ -2842,6 +2842,15 @@
         }
       }
     },
+    "favicon-apple-touch": {
+      "name": "Favicon - Apple Touch",
+      "settings": {
+        "favicon": {
+          "info": "180 x 180px recommended.",
+          "label": "Apple Icon"
+        }
+      }
+    },
     "google-map": {
       "name": "Google maps",
       "settings": {
