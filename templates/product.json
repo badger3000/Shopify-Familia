@@ -91,11 +91,11 @@
         "e02bd487-7756-43fc-8ac6-54fa9a16ca85"
       ],
       "settings": {
-        "gallery_style": "slider",
+        "gallery_style": "gallery",
         "show_description": true,
         "width": "half",
-        "style": "accordion",
-        "accordion_content_alignment": "left",
+        "style": "tabs",
+        "accordion_content_alignment": "center",
         "content_heading": "",
         "content": ""
       }
