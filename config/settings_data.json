@@ -72,7 +72,7 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "show_bar": true,
+          "show_bar": false,
           "show_close": false,
           "icon": "none",
           "first_text": "WEBSITE STILL UNDER CONSTRUCTION",
