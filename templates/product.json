@@ -91,13 +91,13 @@
         "e02bd487-7756-43fc-8ac6-54fa9a16ca85"
       ],
       "settings": {
-        "gallery_style": "gallery",
+        "gallery_style": "slider",
         "show_description": true,
         "width": "half",
         "style": "accordion",
         "accordion_content_alignment": "left",
-        "content_heading": "Heading",
-        "content": "Add Second tab description here."
+        "content_heading": "",
+        "content": ""
       }
     },
     "1661406604438d91b8": {
