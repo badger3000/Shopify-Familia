@@ -402,6 +402,12 @@
     "16636570176fed7d3d": {
       "type": "featured-articles",
       "blocks": {
+        "16636570177d45139e-2": {
+          "type": "article",
+          "settings": {
+            "article": "news\/skate-half-cab-92-gtx"
+          }
+        },
         "16636570177d45139e-1": {
           "type": "article",
           "settings": {
@@ -413,19 +419,12 @@
           "settings": {
             "article": "news\/nike-sb-x-huf-dunk-blind-bag-release"
           }
-        },
-        "16636570177d45139e-2": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": ""
-          }
         }
       },
       "block_order": [
+        "16636570177d45139e-2",
         "16636570177d45139e-1",
-        "16636570177d45139e-0",
-        "16636570177d45139e-2"
+        "16636570177d45139e-0"
       ],
       "settings": {
         "overlay_content": true,
