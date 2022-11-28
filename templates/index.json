@@ -37,17 +37,18 @@
         "166365679366efee4b-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ADIDAS-BANNER.png",
+            "image": "shopify:\/\/shop_images\/andrea-banner.jpg",
             "desktop_image_focal": "center",
+            "image_mobile": "shopify:\/\/shop_images\/andrea-banner.jpg",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
             "banner_title": "",
-            "banner_desc": "ADIDAS GINO X SAMBA",
+            "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "Shop Now",
-            "button_link": "shopify:\/\/collections\/adidas",
-            "desktop_content_position": "d-center",
+            "button_text": "ANDREA BARTSCH FOR FAMILIA",
+            "button_link": "",
+            "desktop_content_position": "d-bottom-left",
             "mobile_content_position": "m-center",
             "title_color": "#000000",
             "subtitle_color": "#000000",
@@ -126,13 +127,44 @@
             "btn_text_m": "#000000",
             "btn_border_m": "#ffffff"
           }
+        },
+        "34acffaf-4162-461b-9e34-bc8830a47722": {
+          "type": "slide",
+          "settings": {
+            "desktop_image_focal": "center",
+            "mobile_image_focal": "center",
+            "banner_subtitle": "Banner Sub Heading Here",
+            "banner_title": "Banner Heading Here",
+            "banner_desc": "Banner Description Here",
+            "desktop_title_size": 70,
+            "mobile_title_size": 36,
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all",
+            "desktop_content_position": "d-center",
+            "mobile_content_position": "m-center",
+            "title_color": "#000000",
+            "subtitle_color": "#000000",
+            "subtitle_bgcolor": "#DCDCDC",
+            "desc_color": "#000000",
+            "btn_bg": "#000000",
+            "btn_text": "#ffffff",
+            "btn_border": "#000000",
+            "title_color_m": "#ffffff",
+            "subtitle_color_m": "#000000",
+            "subtitle_bgcolor_m": "#DCDCDC",
+            "desc_color_m": "#ffffff",
+            "btn_bg_m": "#ffffff",
+            "btn_text_m": "#000000",
+            "btn_border_m": "#ffffff"
+          }
         }
       },
       "block_order": [
         "166365679366efee4b-2",
         "166365679366efee4b-0",
         "166365679366efee4b-1",
-        "166365679366efee4b-3"
+        "166365679366efee4b-3",
+        "34acffaf-4162-461b-9e34-bc8830a47722"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
