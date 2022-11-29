@@ -3,8 +3,7 @@
     "main-page": {
       "type": "main-page",
       "settings": {
-        "banner": "shopify:\/\/shop_images\/HQ-1.jpg",
-        "bgcolor": "#f5efec",
+        "bgcolor": "#ffffff",
         "textcolor": "#e22120"
       }
     },
