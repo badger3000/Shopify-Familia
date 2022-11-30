@@ -130,6 +130,7 @@
         },
         "34acffaf-4162-461b-9e34-bc8830a47722": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
