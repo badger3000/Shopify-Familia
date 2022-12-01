@@ -435,6 +435,12 @@
     "16636570176fed7d3d": {
       "type": "featured-articles",
       "blocks": {
+        "16636570177d45139e-0": {
+          "type": "article",
+          "settings": {
+            "article": "news\/familia-x-clues-skateboard-angel"
+          }
+        },
         "16636570177d45139e-2": {
           "type": "article",
           "settings": {
@@ -446,22 +452,16 @@
           "settings": {
             "article": "news\/stussy-holiday-22"
           }
-        },
-        "16636570177d45139e-0": {
-          "type": "article",
-          "settings": {
-            "article": "news\/nike-sb-x-huf-dunk-blind-bag-release"
-          }
         }
       },
       "block_order": [
+        "16636570177d45139e-0",
         "16636570177d45139e-2",
-        "16636570177d45139e-1",
-        "16636570177d45139e-0"
+        "16636570177d45139e-1"
       ],
       "settings": {
         "overlay_content": true,
-        "heading": "SHOP UPDATES",
+        "heading": "NEWS",
         "button": "View all",
         "link": "",
         "bgcolor": "primary",
