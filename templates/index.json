@@ -111,7 +111,7 @@
             "button_text": "Shop Now",
             "button_link": "https:\/\/familiaskate.com\/search?options%5Bprefix%5D=last&page=2&q=CLOSEOUT&type=product",
             "desktop_content_position": "d-bottom-center",
-            "mobile_content_position": "m-bottom-center",
+            "mobile_content_position": "m-top-center",
             "title_color": "#000000",
             "subtitle_color": "#000000",
             "subtitle_bgcolor": "#dcdcdc",
