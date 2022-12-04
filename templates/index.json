@@ -37,6 +37,7 @@
         },
         "166365679366efee4b-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/LIMO-BANNER.png",
             "desktop_image_focal": "center",
