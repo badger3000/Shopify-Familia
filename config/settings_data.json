@@ -112,9 +112,8 @@
         "blocks": {
           "footer-2": {
             "type": "link_list",
-            "disabled": true,
             "settings": {
-              "heading": "Quick links",
+              "heading": "FAQS",
               "menu": "footer"
             }
           },
@@ -134,12 +133,21 @@
               "placeholder": "Email address",
               "show_social": true
             }
+          },
+          "22d07e14-ff8c-4482-aa50-c0b5982e186a": {
+            "type": "link_list",
+            "disabled": true,
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "footer-2",
           "footer-3",
-          "footer-4"
+          "footer-4",
+          "22d07e14-ff8c-4482-aa50-c0b5982e186a"
         ],
         "settings": {
           "image": "shopify:\/\/shop_images\/BRAND-logo.png",
