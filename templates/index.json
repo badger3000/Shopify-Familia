@@ -35,22 +35,21 @@
             "btn_border_m": "#ffffff"
           }
         },
-        "166365679366efee4b-1": {
+        "166365679366efee4b-3": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/LIMO-BANNER.png",
+            "image": "shopify:\/\/shop_images\/SALE_93dcff34-b686-4255-81b0-44d9503d99eb.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
             "banner_title": "",
             "banner_desc": "",
-            "desktop_title_size": 26,
+            "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/all",
-            "desktop_content_position": "d-bottom-left",
-            "mobile_content_position": "m-bottom-left",
+            "button_text": "Shop Now",
+            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=CLOSEOUT",
+            "desktop_content_position": "d-bottom-center",
+            "mobile_content_position": "m-top-center",
             "title_color": "#000000",
             "subtitle_color": "#000000",
             "subtitle_bgcolor": "#dcdcdc",
@@ -59,7 +58,7 @@
             "btn_text": "#ffffff",
             "btn_border": "#000000",
             "title_color_m": "#ffffff",
-            "subtitle_color_m": "#390909",
+            "subtitle_color_m": "#000000",
             "subtitle_bgcolor_m": "#dcdcdc",
             "desc_color_m": "#ffffff",
             "btn_bg_m": "#ffffff",
@@ -69,6 +68,7 @@
         },
         "166365679366efee4b-2": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/YUTO.png",
             "desktop_image_focal": "center",
@@ -98,21 +98,22 @@
             "btn_border_m": "#ffffff"
           }
         },
-        "166365679366efee4b-3": {
+        "166365679366efee4b-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/SALE_93dcff34-b686-4255-81b0-44d9503d99eb.png",
+            "image": "shopify:\/\/shop_images\/LIMO-BANNER.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
             "banner_title": "",
             "banner_desc": "",
-            "desktop_title_size": 70,
+            "desktop_title_size": 26,
             "mobile_title_size": 36,
-            "button_text": "Shop Now",
-            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=CLOSEOUT",
-            "desktop_content_position": "d-bottom-center",
-            "mobile_content_position": "m-top-center",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/all",
+            "desktop_content_position": "d-bottom-left",
+            "mobile_content_position": "m-bottom-left",
             "title_color": "#000000",
             "subtitle_color": "#000000",
             "subtitle_bgcolor": "#dcdcdc",
@@ -121,7 +122,7 @@
             "btn_text": "#ffffff",
             "btn_border": "#000000",
             "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
+            "subtitle_color_m": "#390909",
             "subtitle_bgcolor_m": "#dcdcdc",
             "desc_color_m": "#ffffff",
             "btn_bg_m": "#ffffff",
@@ -163,9 +164,9 @@
       },
       "block_order": [
         "166365679366efee4b-0",
-        "166365679366efee4b-1",
-        "166365679366efee4b-2",
         "166365679366efee4b-3",
+        "166365679366efee4b-2",
+        "166365679366efee4b-1",
         "34acffaf-4162-461b-9e34-bc8830a47722"
       ],
       "settings": {
@@ -295,7 +296,7 @@
       "disabled": true,
       "settings": {
         "text1": "<p>Add promotional text here<\/p>",
-        "text2": "",
+        "text2": "<p><\/p>",
         "row1_font_family": "--font-family",
         "row2_font_family": "--font-family",
         "heading_font_size": 22,
