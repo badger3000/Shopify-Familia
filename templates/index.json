@@ -6,7 +6,7 @@
         "166365679366efee4b-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LOUIE_BANNER.jpg",
+            "image": "shopify:\/\/shop_images\/Screenshot_2022-12-13_at_11-15-30_lead-fucking-awesome-converse-louie-lopez-pro-mid-a07074c-00.jpg_JPEG_Image_1080_x_720_pixels.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -14,9 +14,9 @@
             "banner_desc": "",
             "desktop_title_size": 26,
             "mobile_title_size": 32,
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/converse",
-            "desktop_content_position": "d-bottom-center",
+            "button_text": "CONS X FA",
+            "button_link": "https:\/\/familiaskate.com\/collections\/converse\/products\/louie-lopez-mid-fucking-awesome",
+            "desktop_content_position": "d-bottom-left",
             "mobile_content_position": "m-center",
             "title_color": "#000000",
             "subtitle_color": "#390909",
