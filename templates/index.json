@@ -436,6 +436,13 @@
     "16636570176fed7d3d": {
       "type": "featured-articles",
       "blocks": {
+        "16636570177d45139e-1": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news\/orange-lobster-supply-drive"
+          }
+        },
         "16636570177d45139e-0": {
           "type": "article",
           "settings": {
@@ -447,18 +454,12 @@
           "settings": {
             "article": "news\/skate-half-cab-92-gtx"
           }
-        },
-        "16636570177d45139e-1": {
-          "type": "article",
-          "settings": {
-            "article": "news\/orange-lobster-supply-drive"
-          }
         }
       },
       "block_order": [
+        "16636570177d45139e-1",
         "16636570177d45139e-0",
-        "16636570177d45139e-2",
-        "16636570177d45139e-1"
+        "16636570177d45139e-2"
       ],
       "settings": {
         "overlay_content": true,
