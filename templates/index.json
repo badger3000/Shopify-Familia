@@ -133,6 +133,7 @@
           "type": "slide",
           "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/DIEGO-BANNER.jpg",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "Banner Sub Heading Here",
@@ -141,7 +142,7 @@
             "desktop_title_size": 70,
             "mobile_title_size": 36,
             "button_text": "Shop Now",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_link": "",
             "desktop_content_position": "d-center",
             "mobile_content_position": "m-center",
             "title_color": "#000000",
