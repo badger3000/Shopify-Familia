@@ -141,7 +141,7 @@
             "desktop_title_size": 70,
             "mobile_title_size": 36,
             "button_text": "SHOP THE SALE",
-            "button_link": "",
+            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=sale",
             "desktop_content_position": "d-bottom-center",
             "mobile_content_position": "m-bottom-right",
             "title_color": "#000000",
