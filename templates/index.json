@@ -67,6 +67,7 @@
         },
         "166365679366efee4b-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/FA_BANNER.jpg",
             "desktop_image_focal": "center",
@@ -99,6 +100,7 @@
         },
         "166365679366efee4b-0": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/andrea-banner.jpg",
             "desktop_image_focal": "center",
