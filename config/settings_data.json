@@ -54,7 +54,7 @@
     "enable_preorder": false,
     "option_style": "swatch",
     "color_swatch_style": "circle",
-    "show_saved_amount": false,
+    "show_saved_amount": true,
     "saved_amount_style": "currency",
     "option_title_font_family": "--heading-font-family",
     "price_font_family": "--heading-font-family",
