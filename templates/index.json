@@ -438,6 +438,76 @@
         "top_space_mobile": 40,
         "bottom_space_mobile": 40
       }
+    },
+    "e971ea8e-8b45-4065-9f91-468bf2c5fc1a": {
+      "type": "image-gallery",
+      "disabled": true,
+      "blocks": {
+        "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-0": {
+          "type": "image",
+          "settings": {
+            "heading": "Heading",
+            "subheading": "Sub heading",
+            "image_focal": "center",
+            "link": ""
+          }
+        },
+        "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-1": {
+          "type": "image",
+          "settings": {
+            "heading": "Heading",
+            "subheading": "Sub heading",
+            "image_focal": "center",
+            "link": ""
+          }
+        },
+        "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-2": {
+          "type": "image",
+          "settings": {
+            "heading": "Heading",
+            "subheading": "Sub heading",
+            "image_focal": "center",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-0",
+        "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-1",
+        "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-2"
+      ],
+      "settings": {
+        "heading": "Add Your Heading Here",
+        "show_border": true,
+        "bgcolor": "primary",
+        "top_space_desktop": 45,
+        "bottom_space_desktop": 45,
+        "top_space_mobile": 35,
+        "bottom_space_mobile": 0
+      }
+    },
+    "1676594975a2a83f0e": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "53561d24-f980-4b4a-bb16-d69275bcadaa": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "53561d24-f980-4b4a-bb16-d69275bcadaa"
+      ],
+      "settings": {
+        "top_space_desktop": 30,
+        "bottom_space_desktop": 30,
+        "top_space_mobile": 30,
+        "bottom_space_mobile": 30
+      }
     }
   },
   "order": [
@@ -449,6 +519,8 @@
     "166365710195d047eb",
     "16636592619c3cbbb7",
     "1663660266a11eac06",
-    "16636570176fed7d3d"
+    "16636570176fed7d3d",
+    "e971ea8e-8b45-4065-9f91-468bf2c5fc1a",
+    "1676594975a2a83f0e"
   ]
 }
