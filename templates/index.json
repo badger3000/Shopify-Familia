@@ -3,10 +3,10 @@
     "1663656793ceee185f": {
       "type": "slider",
       "blocks": {
-        "166365679366efee4b-0": {
+        "166365679366efee4b-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/GONZ-BANNER.jpg",
+            "image": "shopify:\/\/shop_images\/AG-BANNER.jpg",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -14,14 +14,14 @@
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "ALOHA SUPER BY GONZ",
-            "button_link": "https:\/\/familiaskate.com\/collections\/adidas\/products\/aloha-super-one-black-eye-light-orchid",
+            "button_text": "GILLETTE",
+            "button_link": "",
             "desktop_content_position": "d-bottom-left",
-            "mobile_content_position": "m-center",
+            "mobile_content_position": "m-bottom-right",
             "title_color": "#000000",
             "subtitle_color": "#000000",
             "subtitle_bgcolor": "#dcdcdc",
-            "desc_color": "#dfdfdf",
+            "desc_color": "#000000",
             "btn_bg": "#000000",
             "btn_text": "#ffffff",
             "btn_border": "#000000",
@@ -65,6 +65,37 @@
             "btn_border_m": "#ffffff"
           }
         },
+        "166365679366efee4b-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GONZ-BANNER.jpg",
+            "desktop_image_focal": "center",
+            "mobile_image_focal": "center",
+            "banner_subtitle": "",
+            "banner_title": "",
+            "banner_desc": "",
+            "desktop_title_size": 70,
+            "mobile_title_size": 36,
+            "button_text": "ALOHA SUPER BY GONZ",
+            "button_link": "https:\/\/familiaskate.com\/collections\/adidas\/products\/aloha-super-one-black-eye-light-orchid",
+            "desktop_content_position": "d-bottom-left",
+            "mobile_content_position": "m-center",
+            "title_color": "#000000",
+            "subtitle_color": "#000000",
+            "subtitle_bgcolor": "#dcdcdc",
+            "desc_color": "#dfdfdf",
+            "btn_bg": "#000000",
+            "btn_text": "#ffffff",
+            "btn_border": "#000000",
+            "title_color_m": "#ffffff",
+            "subtitle_color_m": "#000000",
+            "subtitle_bgcolor_m": "#dcdcdc",
+            "desc_color_m": "#ffffff",
+            "btn_bg_m": "#ffffff",
+            "btn_text_m": "#000000",
+            "btn_border_m": "#ffffff"
+          }
+        },
         "166365679366efee4b-2": {
           "type": "slide",
           "settings": {
@@ -95,45 +126,13 @@
             "btn_text_m": "#000000",
             "btn_border_m": "#ffffff"
           }
-        },
-        "166365679366efee4b-3": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AG-BANNER.jpg",
-            "desktop_image_focal": "center",
-            "mobile_image_focal": "center",
-            "banner_subtitle": "",
-            "banner_title": "",
-            "banner_desc": "",
-            "desktop_title_size": 70,
-            "mobile_title_size": 36,
-            "button_text": "GILLETTE",
-            "button_link": "",
-            "desktop_content_position": "d-bottom-left",
-            "mobile_content_position": "m-bottom-right",
-            "title_color": "#000000",
-            "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#dcdcdc",
-            "desc_color": "#000000",
-            "btn_bg": "#000000",
-            "btn_text": "#ffffff",
-            "btn_border": "#000000",
-            "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#dcdcdc",
-            "desc_color_m": "#ffffff",
-            "btn_bg_m": "#ffffff",
-            "btn_text_m": "#000000",
-            "btn_border_m": "#ffffff"
-          }
         }
       },
       "block_order": [
-        "166365679366efee4b-0",
+        "166365679366efee4b-3",
         "34acffaf-4162-461b-9e34-bc8830a47722",
-        "166365679366efee4b-2",
-        "166365679366efee4b-3"
+        "166365679366efee4b-0",
+        "166365679366efee4b-2"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
