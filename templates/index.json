@@ -225,7 +225,6 @@
     },
     "166365709266e6844e": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "166365709242fea7f5-0": {
           "type": "title",
@@ -234,6 +233,7 @@
         },
         "166365709242fea7f5-1": {
           "type": "review-star",
+          "disabled": true,
           "settings": {
           }
         },
@@ -249,6 +249,7 @@
         },
         "166365709242fea7f5-4": {
           "type": "quantity",
+          "disabled": true,
           "settings": {
           }
         },
@@ -270,7 +271,7 @@
       "settings": {
         "enable_fullwidth": true,
         "heading": "Featured",
-        "product": "herman-code-black",
+        "product": "familia-premium-script-hoodie",
         "bgcolor": "secondary",
         "top_space_desktop": 20,
         "bottom_space_desktop": 25,
@@ -423,6 +424,7 @@
     },
     "16636570176fed7d3d": {
       "type": "featured-articles",
+      "disabled": true,
       "blocks": {
         "16636570177d45139e-2": {
           "type": "article",
