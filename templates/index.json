@@ -68,7 +68,7 @@
         "34acffaf-4162-461b-9e34-bc8830a47722": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/STUSSY-BANNER.jpg",
+            "image": "shopify:\/\/shop_images\/QUASI-VANS.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -76,8 +76,8 @@
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "SPRING 23",
-            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=STUSSY",
+            "button_text": "",
+            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=quasi",
             "desktop_content_position": "d-bottom-left",
             "mobile_content_position": "m-bottom-left",
             "title_color": "#000000",
