@@ -99,7 +99,7 @@
         "166365679366efee4b-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/GONZ-BANNER.jpg",
+            "image": "shopify:\/\/shop_images\/RTJ-BANNER.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -107,10 +107,10 @@
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "ALOHA SUPER BY GONZ",
-            "button_link": "https:\/\/familiaskate.com\/collections\/adidas\/products\/aloha-super-one-black-eye-light-orchid",
-            "desktop_content_position": "d-bottom-left",
-            "mobile_content_position": "m-center",
+            "button_text": "ENTER RTJ DUNK RAFFLE (LIST CLOSES 7pm WED)",
+            "button_link": "https:\/\/forms.gle\/XVE1HbGDcyWmn6Fg8",
+            "desktop_content_position": "d-bottom-right",
+            "mobile_content_position": "m-bottom-right",
             "title_color": "#000000",
             "subtitle_color": "#000000",
             "subtitle_bgcolor": "#dcdcdc",
