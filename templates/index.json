@@ -5,7 +5,6 @@
       "blocks": {
         "166365679366efee4b-0": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/CONS_AS1.png",
             "desktop_image_focal": "center",
@@ -99,6 +98,7 @@
         },
         "166365679366efee4b-3": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/AG_BANNER.jpg",
             "desktop_image_focal": "center",
