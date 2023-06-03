@@ -131,7 +131,7 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/AG_BANNER.jpg",
+            "image": "shopify:\/\/shop_images\/RATS_BANNER.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -139,7 +139,7 @@
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "THE GILLETTE",
+            "button_text": "",
             "button_link": "shopify:\/\/products\/gillette-olive-cream",
             "desktop_content_position": "d-bottom-right",
             "mobile_content_position": "m-bottom-right",
