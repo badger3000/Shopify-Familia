@@ -6,7 +6,7 @@
         "166365679366efee4b-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/THRASHER_BANNER02.png",
+            "image": "shopify:\/\/shop_images\/full_rats_catalog_IG.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -15,7 +15,7 @@
             "desktop_title_size": 70,
             "mobile_title_size": 36,
             "button_text": "",
-            "button_link": "shopify:\/\/products\/gillette-olive-cream",
+            "button_link": "shopify:\/\/collections\/thrasher-skate-rats",
             "desktop_content_position": "d-bottom-right",
             "mobile_content_position": "m-bottom-right",
             "title_color": "#000000",
