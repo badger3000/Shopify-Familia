@@ -99,7 +99,7 @@
         "166365679366efee4b-3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/full_rats_catalog_IG.png",
+            "image": "shopify:\/\/shop_images\/F_M_BANNER.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -107,8 +107,8 @@
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "THRASHER X FAMILIA SKATE RATS",
-            "button_link": "shopify:\/\/collections\/thrasher-skate-rats",
+            "button_text": "",
+            "button_link": "",
             "desktop_content_position": "d-bottom-center",
             "mobile_content_position": "m-bottom-right",
             "title_color": "#000000",
