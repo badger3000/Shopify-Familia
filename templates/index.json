@@ -99,7 +99,7 @@
         "166365679366efee4b-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CONS_AS1.png",
+            "image": "shopify:\/\/shop_images\/DARKMAN_BANNER.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -107,7 +107,7 @@
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "FAMILIA N.E.",
+            "button_text": "",
             "button_link": "",
             "desktop_content_position": "d-bottom-right",
             "mobile_content_position": "m-bottom-right",
