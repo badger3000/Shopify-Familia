@@ -34,6 +34,37 @@
             "btn_border_m": "#ffffff"
           }
         },
+        "166365679366efee4b-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DARKMAN_BANNER.png",
+            "desktop_image_focal": "center",
+            "mobile_image_focal": "center",
+            "banner_subtitle": "",
+            "banner_title": "",
+            "banner_desc": "",
+            "desktop_title_size": 70,
+            "mobile_title_size": 36,
+            "button_text": "",
+            "button_link": "",
+            "desktop_content_position": "d-bottom-right",
+            "mobile_content_position": "m-bottom-right",
+            "title_color": "#000000",
+            "subtitle_color": "#000000",
+            "subtitle_bgcolor": "#dcdcdc",
+            "desc_color": "#dfdfdf",
+            "btn_bg": "#000000",
+            "btn_text": "#ffffff",
+            "btn_border": "#000000",
+            "title_color_m": "#ffffff",
+            "subtitle_color_m": "#000000",
+            "subtitle_bgcolor_m": "#dcdcdc",
+            "desc_color_m": "#ffffff",
+            "btn_bg_m": "#ffffff",
+            "btn_text_m": "#000000",
+            "btn_border_m": "#ffffff"
+          }
+        },
         "5f410034-39ac-4544-950d-d3be5e292e44": {
           "type": "slide",
           "settings": {
@@ -96,37 +127,6 @@
             "btn_border_m": "#ffffff"
           }
         },
-        "166365679366efee4b-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DARKMAN_BANNER.png",
-            "desktop_image_focal": "center",
-            "mobile_image_focal": "center",
-            "banner_subtitle": "",
-            "banner_title": "",
-            "banner_desc": "",
-            "desktop_title_size": 70,
-            "mobile_title_size": 36,
-            "button_text": "",
-            "button_link": "",
-            "desktop_content_position": "d-bottom-right",
-            "mobile_content_position": "m-bottom-right",
-            "title_color": "#000000",
-            "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#dcdcdc",
-            "desc_color": "#dfdfdf",
-            "btn_bg": "#000000",
-            "btn_text": "#ffffff",
-            "btn_border": "#000000",
-            "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#dcdcdc",
-            "desc_color_m": "#ffffff",
-            "btn_bg_m": "#ffffff",
-            "btn_text_m": "#000000",
-            "btn_border_m": "#ffffff"
-          }
-        },
         "34acffaf-4162-461b-9e34-bc8830a47722": {
           "type": "slide",
           "settings": {
@@ -161,9 +161,9 @@
       },
       "block_order": [
         "166365679366efee4b-3",
+        "166365679366efee4b-0",
         "5f410034-39ac-4544-950d-d3be5e292e44",
         "166365679366efee4b-2",
-        "166365679366efee4b-0",
         "34acffaf-4162-461b-9e34-bc8830a47722"
       ],
       "settings": {
