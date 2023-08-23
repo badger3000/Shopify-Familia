@@ -96,19 +96,19 @@
             "btn_border_m": "#ffffff"
           }
         },
-        "7396f552-e954-4153-af2b-456b62616f55": {
+        "c5bd2b49-ba7e-482e-b23b-ff5cd4d18334": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BLOND.png",
+            "image": "shopify:\/\/shop_images\/Untitled-1.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
-            "banner_title": "BLONDEY PRO",
+            "banner_title": "",
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "Shop Now",
-            "button_link": "https:\/\/familiaskate.com\/products\/blondey-pro-model?_pos=1&_sid=46c6f60b9&_ss=r",
+            "button_text": "FALL 23 COLLECTION",
+            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=HUF",
             "desktop_content_position": "d-top-right",
             "mobile_content_position": "m-center",
             "title_color": "#000000",
@@ -132,7 +132,7 @@
         "166365679366efee4b-3",
         "166365679366efee4b-0",
         "34acffaf-4162-461b-9e34-bc8830a47722",
-        "7396f552-e954-4153-af2b-456b62616f55"
+        "c5bd2b49-ba7e-482e-b23b-ff5cd4d18334"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
@@ -168,7 +168,6 @@
     },
     "16636567979ba1075d": {
       "type": "featured-collections-list",
-      "disabled": true,
       "blocks": {
         "1663656797ad1afd7d-0": {
           "type": "collection",
@@ -201,6 +200,7 @@
         "1663656797ad1afd7d-2",
         "1663656797ad1afd7d-3"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Collection list",
         "bgcolor": "primary",
@@ -323,7 +323,6 @@
     },
     "16636592619c3cbbb7": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "1663659261e5fd2f07-0": {
           "type": "quote",
@@ -368,6 +367,7 @@
         "1663659261e5fd2f07-2",
         "1663659261e5fd2f07-3"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Add testimonials heading here",
         "slider_style": "style2",
@@ -384,7 +384,6 @@
     },
     "1663660266a11eac06": {
       "type": "spotlight",
-      "disabled": true,
       "blocks": {
         "16636602664e3219eb-0": {
           "type": "spot",
@@ -419,12 +418,12 @@
         "16636602664e3219eb-1",
         "16636602664e3219eb-2"
       ],
+      "disabled": true,
       "settings": {
       }
     },
     "16636570176fed7d3d": {
       "type": "featured-articles",
-      "disabled": true,
       "blocks": {
         "16636570177d45139e-2": {
           "type": "article",
@@ -450,6 +449,7 @@
         "16636570177d45139e-1",
         "16636570177d45139e-0"
       ],
+      "disabled": true,
       "settings": {
         "overlay_content": true,
         "heading": "NEWS",
@@ -464,7 +464,6 @@
     },
     "e971ea8e-8b45-4065-9f91-468bf2c5fc1a": {
       "type": "image-gallery",
-      "disabled": true,
       "blocks": {
         "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-0": {
           "type": "image",
@@ -499,6 +498,7 @@
         "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-1",
         "template--16811596120376__e971ea8e-8b45-4065-9f91-468bf2c5fc1a-167659496023bbeaab-2"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Add Your Heading Here",
         "show_border": true,
