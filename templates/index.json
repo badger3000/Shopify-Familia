@@ -3,6 +3,37 @@
     "1663656793ceee185f": {
       "type": "slider",
       "blocks": {
+        "c5bd2b49-ba7e-482e-b23b-ff5cd4d18334": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-1.png",
+            "desktop_image_focal": "center",
+            "mobile_image_focal": "center",
+            "banner_subtitle": "",
+            "banner_title": "",
+            "banner_desc": "",
+            "desktop_title_size": 70,
+            "mobile_title_size": 36,
+            "button_text": "HUF FALL 23 COLLECTION",
+            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=HUF",
+            "desktop_content_position": "d-top-right",
+            "mobile_content_position": "m-center",
+            "title_color": "#000000",
+            "subtitle_color": "#000000",
+            "subtitle_bgcolor": "#dcdcdc",
+            "desc_color": "#000000",
+            "btn_bg": "#000000",
+            "btn_text": "#ffffff",
+            "btn_border": "#000000",
+            "title_color_m": "#ffffff",
+            "subtitle_color_m": "#000000",
+            "subtitle_bgcolor_m": "#dcdcdc",
+            "desc_color_m": "#ffffff",
+            "btn_bg_m": "#ffffff",
+            "btn_text_m": "#000000",
+            "btn_border_m": "#ffffff"
+          }
+        },
         "166365679366efee4b-3": {
           "type": "slide",
           "settings": {
@@ -25,37 +56,6 @@
             "btn_bg": "#000000",
             "btn_text": "#ffffff",
             "btn_border": "#4565e7",
-            "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#dcdcdc",
-            "desc_color_m": "#ffffff",
-            "btn_bg_m": "#ffffff",
-            "btn_text_m": "#000000",
-            "btn_border_m": "#ffffff"
-          }
-        },
-        "166365679366efee4b-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DARKMAN_BANNER.png",
-            "desktop_image_focal": "center",
-            "mobile_image_focal": "center",
-            "banner_subtitle": "",
-            "banner_title": "",
-            "banner_desc": "",
-            "desktop_title_size": 70,
-            "mobile_title_size": 36,
-            "button_text": "",
-            "button_link": "",
-            "desktop_content_position": "d-bottom-right",
-            "mobile_content_position": "m-bottom-right",
-            "title_color": "#000000",
-            "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#dcdcdc",
-            "desc_color": "#dfdfdf",
-            "btn_bg": "#000000",
-            "btn_text": "#ffffff",
-            "btn_border": "#000000",
             "title_color_m": "#ffffff",
             "subtitle_color_m": "#000000",
             "subtitle_bgcolor_m": "#dcdcdc",
@@ -96,10 +96,10 @@
             "btn_border_m": "#ffffff"
           }
         },
-        "c5bd2b49-ba7e-482e-b23b-ff5cd4d18334": {
+        "166365679366efee4b-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled-1.png",
+            "image": "shopify:\/\/shop_images\/DARKMAN_BANNER.png",
             "desktop_image_focal": "center",
             "mobile_image_focal": "center",
             "banner_subtitle": "",
@@ -107,20 +107,20 @@
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "HUF FALL 23 COLLECTION",
-            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=HUF",
-            "desktop_content_position": "d-top-right",
-            "mobile_content_position": "m-center",
+            "button_text": "",
+            "button_link": "",
+            "desktop_content_position": "d-bottom-right",
+            "mobile_content_position": "m-bottom-right",
             "title_color": "#000000",
             "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#DCDCDC",
-            "desc_color": "#000000",
+            "subtitle_bgcolor": "#dcdcdc",
+            "desc_color": "#dfdfdf",
             "btn_bg": "#000000",
             "btn_text": "#ffffff",
             "btn_border": "#000000",
             "title_color_m": "#ffffff",
             "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#DCDCDC",
+            "subtitle_bgcolor_m": "#dcdcdc",
             "desc_color_m": "#ffffff",
             "btn_bg_m": "#ffffff",
             "btn_text_m": "#000000",
@@ -129,10 +129,10 @@
         }
       },
       "block_order": [
+        "c5bd2b49-ba7e-482e-b23b-ff5cd4d18334",
         "166365679366efee4b-3",
-        "166365679366efee4b-0",
         "34acffaf-4162-461b-9e34-bc8830a47722",
-        "c5bd2b49-ba7e-482e-b23b-ff5cd4d18334"
+        "166365679366efee4b-0"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
@@ -148,7 +148,7 @@
       "type": "apps",
       "blocks": {
         "53561d24-f980-4b4a-bb16-d69275bcadaa": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "heading_size": 20,
             "feed_width": 100,
