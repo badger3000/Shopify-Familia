@@ -144,14 +144,14 @@
             "mobile_content_position": "m-center",
             "title_color": "#000000",
             "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#DCDCDC",
+            "subtitle_bgcolor": "#dcdcdc",
             "desc_color": "#000000",
             "btn_bg": "#000000",
             "btn_text": "#ffffff",
             "btn_border": "#000000",
             "title_color_m": "#ffffff",
             "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#DCDCDC",
+            "subtitle_bgcolor_m": "#dcdcdc",
             "desc_color_m": "#ffffff",
             "btn_bg_m": "#ffffff",
             "btn_text_m": "#000000",
@@ -260,6 +260,7 @@
       "blocks": {
         "166365709242fea7f5-0": {
           "type": "title",
+          "disabled": true,
           "settings": {
           }
         },
@@ -300,6 +301,7 @@
         "166365709242fea7f5-4",
         "166365709242fea7f5-5"
       ],
+      "disabled": true,
       "settings": {
         "enable_fullwidth": true,
         "heading": "Featured",
