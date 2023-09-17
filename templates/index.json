@@ -300,6 +300,7 @@
         "166365709242fea7f5-4",
         "166365709242fea7f5-5"
       ],
+      "disabled": true,
       "settings": {
         "enable_fullwidth": true,
         "heading": "",
