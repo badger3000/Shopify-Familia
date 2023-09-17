@@ -260,7 +260,6 @@
       "blocks": {
         "166365709242fea7f5-0": {
           "type": "title",
-          "disabled": true,
           "settings": {
           }
         },
@@ -301,11 +300,10 @@
         "166365709242fea7f5-4",
         "166365709242fea7f5-5"
       ],
-      "disabled": true,
       "settings": {
         "enable_fullwidth": true,
-        "heading": "Featured",
-        "product": "familia-f-m-tee",
+        "heading": "",
+        "product": "3-for-90-sale-shoe-mystrey-box",
         "bgcolor": "secondary",
         "top_space_desktop": 20,
         "bottom_space_desktop": 25,
