@@ -98,6 +98,7 @@
         },
         "166365679366efee4b-3": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/F_M_BANNER.png",
             "desktop_image_focal": "center",
@@ -129,6 +130,7 @@
         },
         "bf23992c-24e1-43b1-b069-be8fa1581151": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/SAVIE1.png",
             "desktop_image_focal": "center",
