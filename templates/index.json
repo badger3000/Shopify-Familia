@@ -97,12 +97,45 @@
             "btn_text_m": "#000000",
             "btn_border_m": "#ffffff"
           }
+        },
+        "0c9b6d7f-e48c-47be-a429-bd989bc2ddbd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FA-JAKE_CURREN.png",
+            "desktop_image_focal": "center",
+            "image_mobile": "shopify:\/\/shop_images\/FA-JAKE_CURREN.png",
+            "mobile_image_focal": "center",
+            "banner_subtitle": "",
+            "banner_title": "",
+            "banner_desc": "",
+            "desktop_title_size": 70,
+            "mobile_title_size": 36,
+            "button_text": "Shop Now",
+            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=CLASS+DECK",
+            "desktop_content_position": "d-bottom-center",
+            "mobile_content_position": "m-bottom-center",
+            "title_color": "#000000",
+            "subtitle_color": "#000000",
+            "subtitle_bgcolor": "#DCDCDC",
+            "desc_color": "#000000",
+            "btn_bg": "#000000",
+            "btn_text": "#ffffff",
+            "btn_border": "#000000",
+            "title_color_m": "#ffffff",
+            "subtitle_color_m": "#000000",
+            "subtitle_bgcolor_m": "#DCDCDC",
+            "desc_color_m": "#ffffff",
+            "btn_bg_m": "#ffffff",
+            "btn_text_m": "#000000",
+            "btn_border_m": "#ffffff"
+          }
         }
       },
       "block_order": [
         "d0f5bdc2-3536-4fa4-b064-7c16de6f21ed",
         "304792f8-04c6-46b3-bc8a-d22ce5499e92",
-        "12aa340b-edba-41d8-9305-1beba18040b5"
+        "12aa340b-edba-41d8-9305-1beba18040b5",
+        "0c9b6d7f-e48c-47be-a429-bd989bc2ddbd"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
