@@ -53,14 +53,14 @@
             "mobile_content_position": "m-bottom-center",
             "title_color": "#000000",
             "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#DCDCDC",
+            "subtitle_bgcolor": "#dcdcdc",
             "desc_color": "#000000",
             "btn_bg": "#000000",
             "btn_text": "#ffffff",
             "btn_border": "#000000",
             "title_color_m": "#ffffff",
             "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#DCDCDC",
+            "subtitle_bgcolor_m": "#dcdcdc",
             "desc_color_m": "#ffffff",
             "btn_bg_m": "#ffffff",
             "btn_text_m": "#000000",
@@ -129,13 +129,46 @@
             "btn_text_m": "#000000",
             "btn_border_m": "#ffffff"
           }
+        },
+        "a83ecfec-71af-44cb-a12d-0bef3d497488": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/QS-BANNER.png",
+            "desktop_image_focal": "bottom right",
+            "image_mobile": "shopify:\/\/shop_images\/QS-BANNER.png",
+            "mobile_image_focal": "bottom right",
+            "banner_subtitle": "",
+            "banner_title": "",
+            "banner_desc": "",
+            "desktop_title_size": 70,
+            "mobile_title_size": 36,
+            "button_text": "OLLIE UP, BEFORE DOWN",
+            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=QUARTER+SNACKS",
+            "desktop_content_position": "d-bottom-right",
+            "mobile_content_position": "m-bottom-right",
+            "title_color": "#000000",
+            "subtitle_color": "#000000",
+            "subtitle_bgcolor": "#DCDCDC",
+            "desc_color": "#000000",
+            "btn_bg": "#000000",
+            "btn_text": "#ffffff",
+            "btn_border": "#000000",
+            "title_color_m": "#ffffff",
+            "subtitle_color_m": "#000000",
+            "subtitle_bgcolor_m": "#DCDCDC",
+            "desc_color_m": "#ffffff",
+            "btn_bg_m": "#ffffff",
+            "btn_text_m": "#000000",
+            "btn_border_m": "#ffffff"
+          }
         }
       },
       "block_order": [
         "d0f5bdc2-3536-4fa4-b064-7c16de6f21ed",
         "0c9b6d7f-e48c-47be-a429-bd989bc2ddbd",
         "304792f8-04c6-46b3-bc8a-d22ce5499e92",
-        "12aa340b-edba-41d8-9305-1beba18040b5"
+        "12aa340b-edba-41d8-9305-1beba18040b5",
+        "a83ecfec-71af-44cb-a12d-0bef3d497488"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
@@ -153,8 +186,6 @@
         "53561d24-f980-4b4a-bb16-d69275bcadaa": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
             "html_area": ""
           }
         }
