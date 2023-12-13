@@ -37,6 +37,7 @@
         },
         "12aa340b-edba-41d8-9305-1beba18040b5": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/BURN-SQUAD.png",
             "desktop_image_focal": "center",
@@ -68,6 +69,7 @@
         },
         "a83ecfec-71af-44cb-a12d-0bef3d497488": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/QS-BANNER.png",
             "desktop_image_focal": "bottom right",
@@ -100,6 +102,7 @@
         },
         "d0f5bdc2-3536-4fa4-b064-7c16de6f21ed": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/ROWAN-BANNER.png",
             "desktop_image_focal": "center",
@@ -132,6 +135,7 @@
         },
         "0c9b6d7f-e48c-47be-a429-bd989bc2ddbd": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/FA-JAKE_CURREN.png",
             "desktop_image_focal": "center",
@@ -186,6 +190,8 @@
         "53561d24-f980-4b4a-bb16-d69275bcadaa": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "title_color": "",
+            "alignment": "center",
             "html_area": ""
           }
         }
