@@ -20,14 +20,14 @@
             "mobile_content_position": "m-bottom-center",
             "title_color": "#000000",
             "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#DCDCDC",
+            "subtitle_bgcolor": "#dcdcdc",
             "desc_color": "#000000",
             "btn_bg": "#f60909",
             "btn_text": "#ffffff",
             "btn_border": "#ffffff",
             "title_color_m": "#ffffff",
             "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#DCDCDC",
+            "subtitle_bgcolor_m": "#dcdcdc",
             "desc_color_m": "#ffffff",
             "btn_bg_m": "#ffffff",
             "btn_text_m": "#000000",
@@ -96,12 +96,44 @@
             "btn_text_m": "#000000",
             "btn_border_m": "#ffffff"
           }
+        },
+        "slide_qpt9nz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ADI-HENRY_BANNER.png",
+            "desktop_image_focal": "center",
+            "mobile_image_focal": "center",
+            "banner_subtitle": "",
+            "banner_title": "",
+            "banner_desc": "",
+            "desktop_title_size": 70,
+            "mobile_title_size": 36,
+            "button_text": "HENRY JONES X CAMPUS ADV",
+            "button_link": "shopify:\/\/collections\/all",
+            "desktop_content_position": "d-bottom-right",
+            "mobile_content_position": "m-center",
+            "title_color": "#000000",
+            "subtitle_color": "#000000",
+            "subtitle_bgcolor": "#DCDCDC",
+            "desc_color": "#000000",
+            "btn_bg": "#3ea3d2",
+            "btn_text": "#ffffff",
+            "btn_border": "#d7d3d3",
+            "title_color_m": "#ffffff",
+            "subtitle_color_m": "#000000",
+            "subtitle_bgcolor_m": "#DCDCDC",
+            "desc_color_m": "#ffffff",
+            "btn_bg_m": "#ffffff",
+            "btn_text_m": "#000000",
+            "btn_border_m": "#ffffff"
+          }
         }
       },
       "block_order": [
         "slide_gKkrTK",
         "slide_ieiMbY",
-        "304792f8-04c6-46b3-bc8a-d22ce5499e92"
+        "304792f8-04c6-46b3-bc8a-d22ce5499e92",
+        "slide_qpt9nz"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
