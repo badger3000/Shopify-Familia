@@ -67,6 +67,7 @@
         },
         "slide_ieiMbY": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/SAMBA_23e92d37-f304-4cbb-b5b7-ed2dfcee6bc7.png",
             "desktop_image_focal": "center",
