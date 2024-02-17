@@ -3,6 +3,37 @@
     "1663656793ceee185f": {
       "type": "slider",
       "blocks": {
+        "slide_pke34t": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SSD_BANNER.png",
+            "desktop_image_focal": "center",
+            "mobile_image_focal": "center",
+            "banner_subtitle": "",
+            "banner_title": "",
+            "banner_desc": "",
+            "desktop_title_size": 70,
+            "mobile_title_size": 36,
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/all",
+            "desktop_content_position": "d-center",
+            "mobile_content_position": "m-center",
+            "title_color": "#000000",
+            "subtitle_color": "#000000",
+            "subtitle_bgcolor": "#DCDCDC",
+            "desc_color": "#000000",
+            "btn_bg": "#000000",
+            "btn_text": "#ffffff",
+            "btn_border": "#000000",
+            "title_color_m": "#ffffff",
+            "subtitle_color_m": "#000000",
+            "subtitle_bgcolor_m": "#DCDCDC",
+            "desc_color_m": "#ffffff",
+            "btn_bg_m": "#ffffff",
+            "btn_text_m": "#000000",
+            "btn_border_m": "#ffffff"
+          }
+        },
         "slide_qpt9nz": {
           "type": "slide",
           "settings": {
@@ -65,38 +96,6 @@
             "btn_border_m": "#ffffff"
           }
         },
-        "slide_ieiMbY": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SAMBA_23e92d37-f304-4cbb-b5b7-ed2dfcee6bc7.png",
-            "desktop_image_focal": "center",
-            "mobile_image_focal": "center",
-            "banner_subtitle": "",
-            "banner_title": "",
-            "banner_desc": "",
-            "desktop_title_size": 70,
-            "mobile_title_size": 36,
-            "button_text": "SHOP NOW",
-            "button_link": "https:\/\/familiaskate.com\/products\/fa-samba-black?_pos=4&_sid=936cbd7af&_ss=r",
-            "desktop_content_position": "d-center",
-            "mobile_content_position": "m-center",
-            "title_color": "#000000",
-            "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#dcdcdc",
-            "desc_color": "#000000",
-            "btn_bg": "#000000",
-            "btn_text": "#ffffff",
-            "btn_border": "#000000",
-            "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#dcdcdc",
-            "desc_color_m": "#ffffff",
-            "btn_bg_m": "#ffffff",
-            "btn_text_m": "#000000",
-            "btn_border_m": "#ffffff"
-          }
-        },
         "304792f8-04c6-46b3-bc8a-d22ce5499e92": {
           "type": "slide",
           "settings": {
@@ -128,45 +127,13 @@
             "btn_text_m": "#000000",
             "btn_border_m": "#ffffff"
           }
-        },
-        "slide_pke34t": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SSD_BANNER.png",
-            "desktop_image_focal": "center",
-            "mobile_image_focal": "center",
-            "banner_subtitle": "",
-            "banner_title": "",
-            "banner_desc": "",
-            "desktop_title_size": 70,
-            "mobile_title_size": 36,
-            "button_text": "",
-            "button_link": "shopify:\/\/collections\/all",
-            "desktop_content_position": "d-center",
-            "mobile_content_position": "m-center",
-            "title_color": "#000000",
-            "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#DCDCDC",
-            "desc_color": "#000000",
-            "btn_bg": "#000000",
-            "btn_text": "#ffffff",
-            "btn_border": "#000000",
-            "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#DCDCDC",
-            "desc_color_m": "#ffffff",
-            "btn_bg_m": "#ffffff",
-            "btn_text_m": "#000000",
-            "btn_border_m": "#ffffff"
-          }
         }
       },
       "block_order": [
+        "slide_pke34t",
         "slide_qpt9nz",
         "slide_gKkrTK",
-        "slide_ieiMbY",
-        "304792f8-04c6-46b3-bc8a-d22ce5499e92",
-        "slide_pke34t"
+        "304792f8-04c6-46b3-bc8a-d22ce5499e92"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
