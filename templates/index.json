@@ -3,37 +3,6 @@
     "1663656793ceee185f": {
       "type": "slider",
       "blocks": {
-        "slide_pke34t": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SSD_BANNER.png",
-            "desktop_image_focal": "center",
-            "mobile_image_focal": "center",
-            "banner_subtitle": "",
-            "banner_title": "",
-            "banner_desc": "",
-            "desktop_title_size": 70,
-            "mobile_title_size": 36,
-            "button_text": "SHOP SSD 2024 COLLECTION",
-            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=ssd",
-            "desktop_content_position": "d-bottom-left",
-            "mobile_content_position": "m-center",
-            "title_color": "#000000",
-            "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#dcdcdc",
-            "desc_color": "#000000",
-            "btn_bg": "#63e153",
-            "btn_text": "#181818",
-            "btn_border": "#000000",
-            "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#dcdcdc",
-            "desc_color_m": "#ffffff",
-            "btn_bg_m": "#ffffff",
-            "btn_text_m": "#000000",
-            "btn_border_m": "#ffffff"
-          }
-        },
         "slide_qpt9nz": {
           "type": "slide",
           "settings": {
@@ -45,7 +14,7 @@
             "banner_desc": "",
             "desktop_title_size": 70,
             "mobile_title_size": 36,
-            "button_text": "KADER SAMBA \/\/\/ 2\/10\/24",
+            "button_text": "SAMBA ADV \/\/\/ KADER",
             "button_link": "shopify:\/\/collections\/adidas",
             "desktop_content_position": "d-bottom-left",
             "mobile_content_position": "m-center",
@@ -64,76 +33,10 @@
             "btn_text_m": "#000000",
             "btn_border_m": "#ffffff"
           }
-        },
-        "slide_gKkrTK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AIRMAX_BANNER.png",
-            "desktop_image_focal": "center",
-            "mobile_image_focal": "center",
-            "banner_subtitle": "",
-            "banner_title": "",
-            "banner_desc": "",
-            "desktop_title_size": 70,
-            "mobile_title_size": 36,
-            "button_text": "AIR MAX ISHOD",
-            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=air+max",
-            "desktop_content_position": "d-center-right",
-            "mobile_content_position": "m-bottom-center",
-            "title_color": "#000000",
-            "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#dcdcdc",
-            "desc_color": "#000000",
-            "btn_bg": "#f60909",
-            "btn_text": "#ffffff",
-            "btn_border": "#ffffff",
-            "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#dcdcdc",
-            "desc_color_m": "#ffffff",
-            "btn_bg_m": "#ffffff",
-            "btn_text_m": "#000000",
-            "btn_border_m": "#ffffff"
-          }
-        },
-        "304792f8-04c6-46b3-bc8a-d22ce5499e92": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/RP_BANNER.png",
-            "desktop_image_focal": "center",
-            "image_mobile": "shopify:\/\/shop_images\/RP_BANNER.png",
-            "mobile_image_focal": "bottom right",
-            "banner_subtitle": "",
-            "banner_title": "",
-            "banner_desc": "",
-            "desktop_title_size": 70,
-            "mobile_title_size": 36,
-            "button_text": "RODRIGO INSPO COLLECTION",
-            "button_link": "https:\/\/familiaskate.com\/search?type=product&options%5Bprefix%5D=last&q=petersen",
-            "desktop_content_position": "d-bottom-left",
-            "mobile_content_position": "m-bottom-left",
-            "title_color": "#02b9f7",
-            "subtitle_color": "#000000",
-            "subtitle_bgcolor": "#dcdcdc",
-            "desc_color": "#000000",
-            "btn_bg": "#fec04b",
-            "btn_text": "#ffffff",
-            "btn_border": "#000000",
-            "title_color_m": "#ffffff",
-            "subtitle_color_m": "#000000",
-            "subtitle_bgcolor_m": "#dcdcdc",
-            "desc_color_m": "#ffffff",
-            "btn_bg_m": "#8c14f7",
-            "btn_text_m": "#000000",
-            "btn_border_m": "#ffffff"
-          }
         }
       },
       "block_order": [
-        "slide_pke34t",
-        "slide_qpt9nz",
-        "slide_gKkrTK",
-        "304792f8-04c6-46b3-bc8a-d22ce5499e92"
+        "slide_qpt9nz"
       ],
       "settings": {
         "nav_style": "arrows-bottom-right",
