@@ -73,7 +73,7 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "show_bar": true,
+          "show_bar": false,
           "show_close": false,
           "icon": "none",
           "first_text": "CLEARANCE SALE ITEMS UP TO 70% OFF (ALL SALES FINAL)",
